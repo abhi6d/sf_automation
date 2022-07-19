@@ -1,0 +1,17 @@
+TestData:
+  URL: 'https://sfprotest.smartfren.com/sfdms'
+  Browser: 'chrome'
+  Environment : 'localtestbed'
+  USER:
+
+    SmartFern_user_1:
+      username: 'KMR10200117'
+      password: '828977'
+
+    SmartFern_user_2:
+      username: '1009'
+      password: '873467'
+
+
+  SMARTFREN_TESTDATA: C:/Users/abhishek.jayalal/Desktop/SMARTFERN_AUTOMATION/sf_auto_18_07_2022/sf_auto_07072022/Resource/TestData/SMARTFREN_DATAPOOL.xlsx
+  SCREENSHOT_LOC: C:/Users/abhishek.jayalal/Desktop/SMARTFERN_AUTOMATION/sf_auto_18_07_2022/sf_auto_07072022/TestCases/ScreenShots/

@@ -1,0 +1,67 @@
+WKD :
+  LoginPage:
+    welcomenote :
+    UserName: "//input[@autocomplete='new-username']"
+    Password: "//input[@class='form-control']"
+    NextButton: "//button[text()='Next']"
+    UserLogo: "//a[@class='mx-auto nav-link']"
+    Loginbtn: "//button[text()='Login']"
+    Logout: "//a[text()='Logout']"
+
+
+  DashBoard:
+    Apps: "//div/span[text()='Apps']"
+
+
+  SSOPage:
+    nms: "//div[@class='db-product-card'][7]"
+    crm: "//div[@class='db-product-card'][2]"
+    upc: "//div[@class='db-product-card'][11]"
+
+  ISIPulsaDetailsPage:
+    Apps: "//div/span[text()='Apps']"
+    POSApp: "//button/span[text()='POS']"
+    ISIPulsa: "//a[normalize-space()='ISI Pulsa']"
+    InputMDN: "//input[@id='mdn__id']"
+    InputMDNProceedButton: "//div[text()=' Proceed']"
+    InputRPValue: "//input[@id='denom__id']"
+    RPValueAddButton: "//div[text()=' Add']"
+    PaymentTypeDropdown: "//div[@class='css-1pcexqc-container Select']"
+    FinalProccedButton: "(//div[text()=' Proceed'])[2]"
+    PINDigit1: "//input[@aria-label='Please enter verification code. Digit 1']"
+    PINDigit2: "//input[@aria-label='Digit 2']"
+    PINDigit3: "//input[@aria-label='Digit 3']"
+    PINDigit4: "//input[@aria-label='Digit 4']"
+    PINDigit5: "//input[@aria-label='Digit 5']"
+    PINDigit6: "//input[@aria-label='Digit 6']"
+    ConfirmButton: "//div[text()=' Confirm']"
+    TranscationOk: "//div[contains(@class,'btn-md float-center margin-left')]"
+    TranscationId: "//div[contains(text(), '12048')]"
+    TranscationIdText: "//div[normalize-space()='Transaction ID']"
+    TranscationSuccessfulltext: "//div[contains(text(),'Transaction Successful')]"
+
+  BeliPacketDetailsPage:
+    Apps: "//div/span[text()='Apps']"
+    POSApp: "//button/span[text()='POS']"
+    Search: "//input[@placeholder='Search']"
+    BeliPaket: "//img[contains(@src,'/sfdms/images/menus/beliPaket.svg')]"
+    InputMDN: "//input[@id='mdn__id']"
+    InputMDNProceedButton: "//div[text()=' Proceed']"
+    SearchPackage: "//input[@id='searchValue__id']"
+    PaymentTypeDropdown: "//div[@class='css-1pcexqc-container Select']"
+    FinalProccedButton: "(//div[text()=' Proceed'])[2]"
+    PINDigit1: "//input[@aria-label='Please enter verification code. Digit 1']"
+    PINDigit2: "//input[@aria-label='Digit 2']"
+    PINDigit3: "//input[@aria-label='Digit 3']"
+    PINDigit4: "//input[@aria-label='Digit 4']"
+    PINDigit5: "//input[@aria-label='Digit 5']"
+    PINDigit6: "//input[@aria-label='Digit 6']"
+    ConfirmButton: "//div[text()=' Confirm']"
+
+
+
+  ADD_REFERENCE_KEY:
+    Apps: "//div/span[text()='Apps']"
+    DMS: "//button/span[text()='DMS']"
+
+
