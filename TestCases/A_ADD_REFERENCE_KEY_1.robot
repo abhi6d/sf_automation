@@ -42,6 +42,6 @@ TEST CASE 001
     Click Item  //a[normalize-space()='Configure Reference Key']
     Click Item  //div[@class=' css-ackcql']
     Click Item  //button[@class='btn drop-down-button btn-sm btn-block cursor']
-    Set Input      //input[@id='dropDownValue__id']  Test_3
+    Set Input      //input[@id='dropDownValue__id']  Test_11
     Click Item  //div[normalize-space()='Create']
     Sleep  5s

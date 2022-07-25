@@ -149,16 +149,16 @@ Set Dropdown
     Click Item  ${dropdown}
     #wait until element is visible    ${dropdown}
     #Wait Until Keyword Succeeds    ${TimeOut}      ${Start}      click element      ${dropdown}
-    ${bool}=    Execute Javascript      var a = document.querySelectorAll('input[type=radio]');for(var i=0;i<a.length;i++){if(a[i].checked==true && a[i].nextSibling.innerHTML.trim() === '${locator_label}') return true; else return false;}
-    Log To Console  ------------------------
-    Log To Console  ${bool}
-    Log To Console  ------------------------
-    IF    not ${bool}
+    #${bool}=    Execute Javascript      var a = document.querySelectorAll('input[type=radio]');for(var i=0;i<a.length;i++){if(a[i].checked==true && a[i].nextSibling.innerHTML.trim() === '${locator_label}') return true; else return false;}
+    #Log To Console  ------------------------
+    #Log To Console  ${bool}
+    #Log To Console  ------------------------
+    #IF    not ${bool}
         #Wait until element is visible    //label[text()='${locator_label}']
         #Wait Until Keyword Succeeds     ${TimeOut}      ${Start}      click element   //label[text()='${locator_label}']
-        Click Item  //label[text()='${locator_label}' and @md='10']
+    Click Item  //div[contains(text(),'${locator_label}')]
         #Click Item  //label[text()='${locator_label}']
-    END
+    #END
 
 #Set Radio Button
 #     [Arguments]     ${label}  ${value}

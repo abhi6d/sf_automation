@@ -23,7 +23,7 @@ Test Teardown     Execute Suite Teardown
 *** Variables ***
 
 ${SMARTFREN_TESTDATA}     ${TestData}[SMARTFREN_TESTDATA]
-${SmartFern_CREDENTIAL}     ${TestData}[USER][SmartFern_user]
+${SmartFern_CREDENTIAL}     ${TestData}[USER][SmartFern_user_1]
 ${SMARTFREN_TESTDATA}     ${TestData}[SMARTFREN_TESTDATA]
 ${ISIPulsaDetailsPage}    ${wkd}[ISIPulsaDetailsPage]
 ${BeliPacketDetailsPage}    ${wkd}[BeliPacketDetailsPage]

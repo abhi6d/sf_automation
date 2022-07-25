@@ -41,10 +41,31 @@ TEST CASE 001
     Click Item  //span[text()='Settings']
     Click Item  //a[normalize-space()='System Configurations']
     Click Item  //div[@class='css-1hwfws3 Select__value-container']
-    Click Item  //div[contains(text(),'GENERAL')]
+    Click Item  //div[contains(text(),'DMS')]
     Click Item  //div[contains(text(),' Next')]
     Click Item  //div[contains(text(),' Create')]
-    Set Input  //input[@id='name__id']  Test_3
-    Set Input  //input[@id='value__id']  Test_3
+    Set Input  //input[@id='name__id']  Test_7
+    Set Input  //input[@id='value__id']  Test_7
     Click Item  (//div[contains(text(),' Create')])[2]
-    Sleep  5s
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    #Verify elements is visible and displayed    <div>Successfully Created Configuration</div>
