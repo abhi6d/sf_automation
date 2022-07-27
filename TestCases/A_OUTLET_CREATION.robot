@@ -28,7 +28,7 @@ ${SMARTFREN_TESTDATA}     ${TestData}[SMARTFREN_TESTDATA]
 ${ISIPulsaDetailsPage}    ${wkd}[ISIPulsaDetailsPage]
 ${BeliPacketDetailsPage}    ${wkd}[BeliPacketDetailsPage]
 ${ADD_REFERENCE_KEY}  ${wkd}[ADD_REFERENCE_KEY]
-@{ROBOTS}=      Su    Mo    Tu
+
 
 
 
@@ -36,12 +36,14 @@ ${ADD_REFERENCE_KEY}  ${wkd}[ADD_REFERENCE_KEY]
 TEST CASE 001
     [Documentation]    Validate Isi pulsa and beli paket
     Login to SMARTFERN UI  ${SmartFern_CREDENTIAL}[username]  ${SmartFern_CREDENTIAL}[password]
+    Sleep  10s
     Click Item     ${ADD_REFERENCE_KEY}[Apps]
+    Sleep  10s
 
+    Sleep  10s
     #${data}=  Fetch From Excel  ${SMARTFREN_TESTDATA}  SMARTFERN_OUTLET_CREATION  TC_001  TD_01
     #@{DAY}=  getData  ${data}  Day
 
-    ${L2}=  ['Su', 'Mo' ]
 
     ${present}=  Run Keyword And Return Status    Element Should Be Visible   ${ADD_REFERENCE_KEY}[DMS]
     Run Keyword If    ${present}    Click Item  ${ADD_REFERENCE_KEY}[DMS]
@@ -55,23 +57,21 @@ TEST CASE 001
 
     #Click Item  (//div[@class='css-bg1rzq-control Select__control'])[2]
 
-    #Click Item  //div[contains(text(),'Mo')]
-    #Click Item  //div[contains(text(),'Su')]
-
-    FOR    ${robot}    IN    ${L2}
-        Click Item  //div[contains(text(),'${robot}')]
-    END
+    Click Item  //textarea[@id='address__id']
+    #input value on text fields         //textarea[@id='address__id']     8765556777
+    Set TextArea  //textarea[@id='address__id']  8765556666
+    Click Item  //div[contains(text(),'Su')]
     #Execute JavaScript    textarea.value += 'Appended text';
     Sleep  10s
-    Log To Console  ${data}
 
-#    Click Item  //div[@class='css-1hwfws3 Select__value-container']
-#    Click Item  //div[contains(text(),'DMS')]
-#    Click Item  //div[contains(text(),' Next')]
-#    Click Item  //div[contains(text(),' Create')]
-#    Set Input  //input[@id='name__id']  Test_7
-#    Set Input  //input[@id='value__id']  Test_7
-#    Click Item  (//div[contains(text(),' Create')])[2]
+
+    Click Item  //div[@class='css-1hwfws3 Select__value-container']
+    Click Item  //div[contains(text(),'DMS')]
+    Click Item  //div[contains(text(),' Next')]
+    Click Item  //div[contains(text(),' Create')]
+    Set Input  //input[@id='name__id']  Test_7
+    Set Input  //input[@id='value__id']  Test_7
+    Click Item  (//div[contains(text(),' Create')])[2]
 
 
 

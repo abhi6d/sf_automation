@@ -9,7 +9,11 @@ TestData:
       password: '828977'
 
     SmartFern_user_2:
-      username: '1009'
+      username: '2007'
+      password: '441234'
+
+    SmartFern_user_3:
+      username: '2000'
       password: '873467'
 
 

@@ -62,12 +62,31 @@ def fetchRow(filename,sheetname,row):
 
     return row_data
 
+def getListLen(list):
+    newList=[i for i in list.split(',')]
+
+    return len(newList)
+
+def getListData(list,index):
+
+    #listValue.append(i for i in list.split(','))
+    listVal=[]
+
+    for i in list.split(','):
+        listVal.append(i)
+
+    return listVal[int(index)]
+    #if index <= len(list)-1 and index >=0:
+    #    value=list[index]
+
 
 # a=fetchRow('C:/Users/abhishek.jayalal/Desktop/SMARTFERN_AUTOMATION/sf_auto_18_07_2022/sf_auto_07072022/Resource/TestData/SMARTFREN_DATAPOOL.xlsx','SMARTFREN_ISI_PULSA',0)
 # print(a)
 
 
+print(getListLen("3,2,5,6"))
 
+print(getListData("Mon,Su,Thu",0))
 
 
 

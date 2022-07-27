@@ -41,6 +41,16 @@ Fetch Row Data
     ${rowdata}=  fetchRow  ${filename}  ${sheetname}  ${row}
     [Return]  ${rowdata}
 
+List len
+    [Arguments]  ${list}
+    ${listlen}=  getListLen  ${list}
+    [Return]  ${listlen}
+
+List Value
+    [Arguments]  ${list}  ${index}
+    ${listData}=  getListData  ${list}  ${index}
+    [Return]  ${listData}
+
 
 Dummy Keyword
     ${celldata}=  dummy

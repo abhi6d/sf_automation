@@ -197,6 +197,19 @@ Set Input
     ...  ELSE  Wait Until Keyword Succeeds    ${TimeOut}      ${Start}      input text      ${locator}  ${value}
 
 
+Set TextArea
+    [Arguments]     ${locator}  ${value}
+
+    #wait until element is visible    ${locator}
+    #Wait Until Keyword Succeeds    ${TimeOut}      ${Start}      click element      ${locator}
+
+    Click Item  ${locator}
+
+    Run Keyword If  '${value}' == 'nan'  Log To Console  NANACONDITION
+    ...  ELSE IF  '${value}' == 'BLANK'  Wait Until Keyword Succeeds    ${TimeOut}      ${Start}      input text      ${locator}  \
+    ...  ELSE  Wait Until Keyword Succeeds    ${TimeOut}      ${Start}      input value on text fields         ${locator}     ${value}
+
+
 Search By ID
     [Arguments]     ${option}  ${id}
     #Wait Until Keyword Succeeds    ${TimeOut}      ${Start}      click element      ${option}
@@ -230,3 +243,14 @@ TakePic
     [Arguments]     ${picname}
 
     capture page screenshot  ${SCREENSHOT_LOC}/${picname}
+
+Set Accordian
+    [Arguments]     ${WEEKDAY}  ${len}
+
+    FOR  ${index}  IN RANGE  0  ${len}-1
+            #Log To Console  ${len}
+            ${Value}=  List Value  ${WEEKDAY}  ${index}
+            Log To Console  ${Value}
+            Click Item  //div[contains(text(),'${Value}')]
+            Sleep  5s
+    END
