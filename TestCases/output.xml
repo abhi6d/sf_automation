@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220728 02:24:26.173" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220728 03:20:23.094" rpa="false" schemaversion="3">
 <suite id="s1" name="A ADD REFERENCE KEY 1" source="C:\Users\abhishek.jayalal\Desktop\SMARTFERN_AUTOMATION\sf_auto_18_07_2022\sf_auto_07072022\TestCases\A_ADD_REFERENCE_KEY_1.robot">
 <test id="s1-t1" name="TEST CASE 001" line="33">
 <kw name="Execute Suite Setup as User" library="Common" type="SETUP">
@@ -10,14 +10,14 @@
 <arg>${TestData}[Browser]</arg>
 <arg>options=add_argument("--ignore-certificate-errors")</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220728 02:24:27.241" level="INFO">Opening browser 'chrome' to base url 'https://sfprotest.smartfren.com/sfdms'.</msg>
-<status status="PASS" starttime="20220728 02:24:27.241" endtime="20220728 02:24:33.678"/>
+<msg timestamp="20220728 03:20:24.862" level="INFO">Opening browser 'chrome' to base url 'https://sfprotest.smartfren.com/sfdms'.</msg>
+<status status="PASS" starttime="20220728 03:20:24.861" endtime="20220728 03:20:32.397"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220728 02:24:33.679" endtime="20220728 02:24:33.884"/>
+<status status="PASS" starttime="20220728 03:20:32.398" endtime="20220728 03:20:32.720"/>
 </kw>
-<status status="PASS" starttime="20220728 02:24:27.241" endtime="20220728 02:24:33.884"/>
+<status status="PASS" starttime="20220728 03:20:24.861" endtime="20220728 03:20:32.721"/>
 </kw>
 <kw name="Login to SMARTFERN UI" library="SF_Login_Keyword">
 <arg>${SmartFern_CREDENTIAL}[username]</arg>
@@ -25,8 +25,8 @@
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220728 02:24:38.900" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20220728 02:24:33.886" endtime="20220728 02:24:38.900"/>
+<msg timestamp="20220728 03:20:37.738" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220728 03:20:32.724" endtime="20220728 03:20:37.738"/>
 </kw>
 <kw name="Set Input" library="Common">
 <arg>${LoginPage}[UserName]</arg>
@@ -40,20 +40,20 @@
 <arg>${locator}</arg>
 <arg>timeout=60</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220728 02:24:38.901" endtime="20220728 02:24:38.940"/>
+<status status="PASS" starttime="20220728 03:20:37.739" endtime="20220728 03:20:37.791"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <arg>timeout=60</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220728 02:24:38.940" endtime="20220728 02:24:38.962"/>
+<status status="PASS" starttime="20220728 03:20:37.792" endtime="20220728 03:20:37.813"/>
 </kw>
 <kw name="Page Should Contain Element" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <arg>timeout=60</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20220728 02:24:38.970" level="INFO">Current page contains element '//input[@autocomplete='new-username']'.</msg>
-<status status="PASS" starttime="20220728 02:24:38.963" endtime="20220728 02:24:38.970"/>
+<msg timestamp="20220728 03:20:37.822" level="INFO">Current page contains element '//input[@autocomplete='new-username']'.</msg>
+<status status="PASS" starttime="20220728 03:20:37.813" endtime="20220728 03:20:37.822"/>
 </kw>
 <kw name="Wait Until Keyword Succeeds" library="BuiltIn">
 <arg>${TimeOut}</arg>
@@ -64,11 +64,11 @@
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220728 02:24:38.972" endtime="20220728 02:24:38.982"/>
+<status status="PASS" starttime="20220728 03:20:37.823" endtime="20220728 03:20:37.831"/>
 </kw>
-<status status="PASS" starttime="20220728 02:24:38.971" endtime="20220728 02:24:38.982"/>
+<status status="PASS" starttime="20220728 03:20:37.823" endtime="20220728 03:20:37.831"/>
 </kw>
-<status status="PASS" starttime="20220728 02:24:38.901" endtime="20220728 02:24:38.982"/>
+<status status="PASS" starttime="20220728 03:20:37.739" endtime="20220728 03:20:37.831"/>
 </kw>
 <kw name="Wait Until Keyword Succeeds" library="BuiltIn">
 <arg>${TimeOut}</arg>
@@ -79,12 +79,12 @@
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220728 02:24:38.983" level="INFO">Clicking element '//input[@autocomplete='new-username']'.</msg>
-<status status="PASS" starttime="20220728 02:24:38.983" endtime="20220728 02:24:39.042"/>
+<msg timestamp="20220728 03:20:37.832" level="INFO">Clicking element '//input[@autocomplete='new-username']'.</msg>
+<status status="PASS" starttime="20220728 03:20:37.832" endtime="20220728 03:20:37.905"/>
 </kw>
-<status status="PASS" starttime="20220728 02:24:38.982" endtime="20220728 02:24:39.043"/>
+<status status="PASS" starttime="20220728 03:20:37.832" endtime="20220728 03:20:37.905"/>
 </kw>
-<status status="PASS" starttime="20220728 02:24:38.900" endtime="20220728 02:24:39.043"/>
+<status status="PASS" starttime="20220728 03:20:37.739" endtime="20220728 03:20:37.905"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>'${value}' == 'nan'</arg>
@@ -117,14 +117,14 @@
 <arg>${locator}</arg>
 <arg>${value}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220728 02:24:39.047" level="INFO">Typing text '2007' into text field '//input[@autocomplete='new-username']'.</msg>
-<status status="PASS" starttime="20220728 02:24:39.046" endtime="20220728 02:24:39.132"/>
+<msg timestamp="20220728 03:20:37.908" level="INFO">Typing text '2007' into text field '//input[@autocomplete='new-username']'.</msg>
+<status status="PASS" starttime="20220728 03:20:37.907" endtime="20220728 03:20:37.988"/>
 </kw>
-<status status="PASS" starttime="20220728 02:24:39.046" endtime="20220728 02:24:39.133"/>
+<status status="PASS" starttime="20220728 03:20:37.907" endtime="20220728 03:20:37.988"/>
 </kw>
-<status status="PASS" starttime="20220728 02:24:39.044" endtime="20220728 02:24:39.133"/>
+<status status="PASS" starttime="20220728 03:20:37.905" endtime="20220728 03:20:37.988"/>
 </kw>
-<status status="PASS" starttime="20220728 02:24:38.900" endtime="20220728 02:24:39.133"/>
+<status status="PASS" starttime="20220728 03:20:37.738" endtime="20220728 03:20:37.989"/>
 </kw>
 <kw name="Click Item" library="Common">
 <arg>${LoginPage}[NextButton]</arg>
@@ -135,20 +135,20 @@
 <arg>${locator}</arg>
 <arg>timeout=60</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220728 02:24:39.134" endtime="20220728 02:24:39.175"/>
+<status status="PASS" starttime="20220728 03:20:37.991" endtime="20220728 03:20:38.037"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <arg>timeout=60</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220728 02:24:39.175" endtime="20220728 02:24:39.202"/>
+<status status="PASS" starttime="20220728 03:20:38.037" endtime="20220728 03:20:38.062"/>
 </kw>
 <kw name="Page Should Contain Element" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <arg>timeout=60</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20220728 02:24:39.213" level="INFO">Current page contains element '//button[text()='Next']'.</msg>
-<status status="PASS" starttime="20220728 02:24:39.202" endtime="20220728 02:24:39.213"/>
+<msg timestamp="20220728 03:20:38.072" level="INFO">Current page contains element '//button[text()='Next']'.</msg>
+<status status="PASS" starttime="20220728 03:20:38.062" endtime="20220728 03:20:38.072"/>
 </kw>
 <kw name="Wait Until Keyword Succeeds" library="BuiltIn">
 <arg>${TimeOut}</arg>
@@ -159,11 +159,11 @@
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220728 02:24:39.214" endtime="20220728 02:24:39.224"/>
+<status status="PASS" starttime="20220728 03:20:38.073" endtime="20220728 03:20:38.080"/>
 </kw>
-<status status="PASS" starttime="20220728 02:24:39.213" endtime="20220728 02:24:39.225"/>
+<status status="PASS" starttime="20220728 03:20:38.072" endtime="20220728 03:20:38.080"/>
 </kw>
-<status status="PASS" starttime="20220728 02:24:39.133" endtime="20220728 02:24:39.225"/>
+<status status="PASS" starttime="20220728 03:20:37.990" endtime="20220728 03:20:38.080"/>
 </kw>
 <kw name="Wait Until Keyword Succeeds" library="BuiltIn">
 <arg>${TimeOut}</arg>
@@ -174,18 +174,18 @@
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220728 02:24:39.226" level="INFO">Clicking element '//button[text()='Next']'.</msg>
-<status status="PASS" starttime="20220728 02:24:39.226" endtime="20220728 02:24:39.285"/>
+<msg timestamp="20220728 03:20:38.081" level="INFO">Clicking element '//button[text()='Next']'.</msg>
+<status status="PASS" starttime="20220728 03:20:38.081" endtime="20220728 03:20:38.143"/>
 </kw>
-<status status="PASS" starttime="20220728 02:24:39.225" endtime="20220728 02:24:39.285"/>
+<status status="PASS" starttime="20220728 03:20:38.080" endtime="20220728 03:20:38.143"/>
 </kw>
-<status status="PASS" starttime="20220728 02:24:39.133" endtime="20220728 02:24:39.285"/>
+<status status="PASS" starttime="20220728 03:20:37.989" endtime="20220728 03:20:38.144"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>4s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220728 02:24:43.299" level="INFO">Slept 4 seconds</msg>
-<status status="PASS" starttime="20220728 02:24:39.285" endtime="20220728 02:24:43.299"/>
+<msg timestamp="20220728 03:20:42.157" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20220728 03:20:38.144" endtime="20220728 03:20:42.157"/>
 </kw>
 <kw name="Set Input" library="Common">
 <arg>${LoginPage}[Password]</arg>
@@ -199,20 +199,20 @@
 <arg>${locator}</arg>
 <arg>timeout=60</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220728 02:24:43.302" endtime="20220728 02:24:43.351"/>
+<status status="PASS" starttime="20220728 03:20:42.159" endtime="20220728 03:20:42.191"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <arg>timeout=60</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220728 02:24:43.351" endtime="20220728 02:24:43.370"/>
+<status status="PASS" starttime="20220728 03:20:42.192" endtime="20220728 03:20:42.208"/>
 </kw>
 <kw name="Page Should Contain Element" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <arg>timeout=60</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20220728 02:24:43.379" level="INFO">Current page contains element '//input[@class='form-control']'.</msg>
-<status status="PASS" starttime="20220728 02:24:43.370" endtime="20220728 02:24:43.379"/>
+<msg timestamp="20220728 03:20:42.215" level="INFO">Current page contains element '//input[@class='form-control']'.</msg>
+<status status="PASS" starttime="20220728 03:20:42.208" endtime="20220728 03:20:42.215"/>
 </kw>
 <kw name="Wait Until Keyword Succeeds" library="BuiltIn">
 <arg>${TimeOut}</arg>
@@ -223,11 +223,11 @@
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220728 02:24:43.380" endtime="20220728 02:24:43.387"/>
+<status status="PASS" starttime="20220728 03:20:42.215" endtime="20220728 03:20:42.224"/>
 </kw>
-<status status="PASS" starttime="20220728 02:24:43.379" endtime="20220728 02:24:43.387"/>
+<status status="PASS" starttime="20220728 03:20:42.215" endtime="20220728 03:20:42.224"/>
 </kw>
-<status status="PASS" starttime="20220728 02:24:43.301" endtime="20220728 02:24:43.387"/>
+<status status="PASS" starttime="20220728 03:20:42.158" endtime="20220728 03:20:42.224"/>
 </kw>
 <kw name="Wait Until Keyword Succeeds" library="BuiltIn">
 <arg>${TimeOut}</arg>
@@ -238,12 +238,12 @@
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220728 02:24:43.388" level="INFO">Clicking element '//input[@class='form-control']'.</msg>
-<status status="PASS" starttime="20220728 02:24:43.388" endtime="20220728 02:24:43.443"/>
+<msg timestamp="20220728 03:20:42.225" level="INFO">Clicking element '//input[@class='form-control']'.</msg>
+<status status="PASS" starttime="20220728 03:20:42.225" endtime="20220728 03:20:42.275"/>
 </kw>
-<status status="PASS" starttime="20220728 02:24:43.387" endtime="20220728 02:24:43.444"/>
+<status status="PASS" starttime="20220728 03:20:42.224" endtime="20220728 03:20:42.275"/>
 </kw>
-<status status="PASS" starttime="20220728 02:24:43.301" endtime="20220728 02:24:43.444"/>
+<status status="PASS" starttime="20220728 03:20:42.158" endtime="20220728 03:20:42.276"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>'${value}' == 'nan'</arg>
@@ -276,14 +276,14 @@
 <arg>${locator}</arg>
 <arg>${value}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220728 02:24:43.445" level="INFO">Typing text '441234' into text field '//input[@class='form-control']'.</msg>
-<status status="PASS" starttime="20220728 02:24:43.445" endtime="20220728 02:24:43.525"/>
+<msg timestamp="20220728 03:20:42.278" level="INFO">Typing text '441234' into text field '//input[@class='form-control']'.</msg>
+<status status="PASS" starttime="20220728 03:20:42.277" endtime="20220728 03:20:42.357"/>
 </kw>
-<status status="PASS" starttime="20220728 02:24:43.445" endtime="20220728 02:24:43.525"/>
+<status status="PASS" starttime="20220728 03:20:42.277" endtime="20220728 03:20:42.357"/>
 </kw>
-<status status="PASS" starttime="20220728 02:24:43.444" endtime="20220728 02:24:43.525"/>
+<status status="PASS" starttime="20220728 03:20:42.276" endtime="20220728 03:20:42.357"/>
 </kw>
-<status status="PASS" starttime="20220728 02:24:43.299" endtime="20220728 02:24:43.525"/>
+<status status="PASS" starttime="20220728 03:20:42.157" endtime="20220728 03:20:42.357"/>
 </kw>
 <kw name="Click Item" library="Common">
 <arg>${LoginPage}[Loginbtn]</arg>
@@ -294,20 +294,20 @@
 <arg>${locator}</arg>
 <arg>timeout=60</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220728 02:24:43.526" endtime="20220728 02:24:43.553"/>
+<status status="PASS" starttime="20220728 03:20:42.358" endtime="20220728 03:20:42.387"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <arg>timeout=60</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220728 02:24:43.553" endtime="20220728 02:24:43.576"/>
+<status status="PASS" starttime="20220728 03:20:42.387" endtime="20220728 03:20:42.405"/>
 </kw>
 <kw name="Page Should Contain Element" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <arg>timeout=60</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20220728 02:24:43.584" level="INFO">Current page contains element '//button[text()='Login']'.</msg>
-<status status="PASS" starttime="20220728 02:24:43.577" endtime="20220728 02:24:43.584"/>
+<msg timestamp="20220728 03:20:42.413" level="INFO">Current page contains element '//button[text()='Login']'.</msg>
+<status status="PASS" starttime="20220728 03:20:42.406" endtime="20220728 03:20:42.414"/>
 </kw>
 <kw name="Wait Until Keyword Succeeds" library="BuiltIn">
 <arg>${TimeOut}</arg>
@@ -318,11 +318,11 @@
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220728 02:24:43.585" endtime="20220728 02:24:43.594"/>
+<status status="PASS" starttime="20220728 03:20:42.414" endtime="20220728 03:20:42.423"/>
 </kw>
-<status status="PASS" starttime="20220728 02:24:43.584" endtime="20220728 02:24:43.595"/>
+<status status="PASS" starttime="20220728 03:20:42.414" endtime="20220728 03:20:42.423"/>
 </kw>
-<status status="PASS" starttime="20220728 02:24:43.526" endtime="20220728 02:24:43.595"/>
+<status status="PASS" starttime="20220728 03:20:42.357" endtime="20220728 03:20:42.424"/>
 </kw>
 <kw name="Wait Until Keyword Succeeds" library="BuiltIn">
 <arg>${TimeOut}</arg>
@@ -333,12 +333,12 @@
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220728 02:24:43.596" level="INFO">Clicking element '//button[text()='Login']'.</msg>
-<status status="PASS" starttime="20220728 02:24:43.596" endtime="20220728 02:24:43.644"/>
+<msg timestamp="20220728 03:20:42.426" level="INFO">Clicking element '//button[text()='Login']'.</msg>
+<status status="PASS" starttime="20220728 03:20:42.425" endtime="20220728 03:20:42.461"/>
 </kw>
-<status status="PASS" starttime="20220728 02:24:43.595" endtime="20220728 02:24:43.644"/>
+<status status="PASS" starttime="20220728 03:20:42.424" endtime="20220728 03:20:42.461"/>
 </kw>
-<status status="PASS" starttime="20220728 02:24:43.525" endtime="20220728 02:24:43.644"/>
+<status status="PASS" starttime="20220728 03:20:42.357" endtime="20220728 03:20:42.461"/>
 </kw>
 <kw name="Verify elements is visible and displayed" library="Common">
 <arg>//div[text()='Dashboard']</arg>
@@ -347,20 +347,20 @@
 <arg>${locator}</arg>
 <arg>timeout=60</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220728 02:24:43.645" endtime="20220728 02:24:45.242"/>
+<status status="PASS" starttime="20220728 03:20:42.462" endtime="20220728 03:20:44.016"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <arg>timeout=60</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220728 02:24:45.242" endtime="20220728 02:24:45.261"/>
+<status status="PASS" starttime="20220728 03:20:44.016" endtime="20220728 03:20:44.035"/>
 </kw>
 <kw name="Page Should Contain Element" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <arg>timeout=60</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20220728 02:24:45.268" level="INFO">Current page contains element '//div[text()='Dashboard']'.</msg>
-<status status="PASS" starttime="20220728 02:24:45.261" endtime="20220728 02:24:45.269"/>
+<msg timestamp="20220728 03:20:44.043" level="INFO">Current page contains element '//div[text()='Dashboard']'.</msg>
+<status status="PASS" starttime="20220728 03:20:44.035" endtime="20220728 03:20:44.043"/>
 </kw>
 <kw name="Wait Until Keyword Succeeds" library="BuiltIn">
 <arg>${TimeOut}</arg>
@@ -371,14 +371,30 @@
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220728 02:24:45.269" endtime="20220728 02:24:45.276"/>
+<status status="PASS" starttime="20220728 03:20:44.044" endtime="20220728 03:20:44.050"/>
 </kw>
-<status status="PASS" starttime="20220728 02:24:45.269" endtime="20220728 02:24:45.276"/>
+<status status="PASS" starttime="20220728 03:20:44.043" endtime="20220728 03:20:44.050"/>
 </kw>
-<status status="PASS" starttime="20220728 02:24:43.645" endtime="20220728 02:24:45.276"/>
+<status status="PASS" starttime="20220728 03:20:42.462" endtime="20220728 03:20:44.050"/>
 </kw>
-<status status="PASS" starttime="20220728 02:24:33.885" endtime="20220728 02:24:45.276"/>
+<status status="PASS" starttime="20220728 03:20:32.722" endtime="20220728 03:20:44.051"/>
 </kw>
+<kw name="Read Number of Rows" library="Read_TestData_Keyword">
+<var>${row}</var>
+<arg>${SMARTFREN_TESTDATA}</arg>
+<arg>SMARTFERN_ADD_REFERNCE_KEY</arg>
+<kw name="Fetch No Rows" library="ReadDataFromExcel">
+<var>${maxr}</var>
+<arg>${filename}</arg>
+<arg>${sheetname}</arg>
+<msg timestamp="20220728 03:20:44.207" level="INFO">${maxr} = 5</msg>
+<status status="PASS" starttime="20220728 03:20:44.051" endtime="20220728 03:20:44.207"/>
+</kw>
+<msg timestamp="20220728 03:20:44.207" level="INFO">${row} = 5</msg>
+<status status="PASS" starttime="20220728 03:20:44.051" endtime="20220728 03:20:44.207"/>
+</kw>
+<kw name="Add Reference Key 1" library="SF_UI_Keywords">
+<arg>${row}</arg>
 <kw name="Click Item" library="Common">
 <arg>${ADD_REFERENCE_KEY}[Apps]</arg>
 <kw name="Verify elements is visible and displayed" library="Common">
@@ -388,20 +404,20 @@
 <arg>${locator}</arg>
 <arg>timeout=60</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220728 02:24:45.277" endtime="20220728 02:24:45.310"/>
+<status status="PASS" starttime="20220728 03:20:44.209" endtime="20220728 03:20:44.243"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <arg>timeout=60</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220728 02:24:45.310" endtime="20220728 02:24:45.328"/>
+<status status="PASS" starttime="20220728 03:20:44.243" endtime="20220728 03:20:44.261"/>
 </kw>
 <kw name="Page Should Contain Element" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <arg>timeout=60</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20220728 02:24:45.335" level="INFO">Current page contains element '//div/span[text()='Apps']'.</msg>
-<status status="PASS" starttime="20220728 02:24:45.329" endtime="20220728 02:24:45.336"/>
+<msg timestamp="20220728 03:20:44.268" level="INFO">Current page contains element '//div/span[text()='Apps']'.</msg>
+<status status="PASS" starttime="20220728 03:20:44.261" endtime="20220728 03:20:44.268"/>
 </kw>
 <kw name="Wait Until Keyword Succeeds" library="BuiltIn">
 <arg>${TimeOut}</arg>
@@ -412,11 +428,11 @@
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220728 02:24:45.336" endtime="20220728 02:24:45.343"/>
+<status status="PASS" starttime="20220728 03:20:44.269" endtime="20220728 03:20:44.275"/>
 </kw>
-<status status="PASS" starttime="20220728 02:24:45.336" endtime="20220728 02:24:45.343"/>
+<status status="PASS" starttime="20220728 03:20:44.269" endtime="20220728 03:20:44.275"/>
 </kw>
-<status status="PASS" starttime="20220728 02:24:45.277" endtime="20220728 02:24:45.343"/>
+<status status="PASS" starttime="20220728 03:20:44.209" endtime="20220728 03:20:44.276"/>
 </kw>
 <kw name="Wait Until Keyword Succeeds" library="BuiltIn">
 <arg>${TimeOut}</arg>
@@ -427,12 +443,12 @@
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220728 02:24:45.344" level="INFO">Clicking element '//div/span[text()='Apps']'.</msg>
-<status status="PASS" starttime="20220728 02:24:45.344" endtime="20220728 02:24:45.392"/>
+<msg timestamp="20220728 03:20:44.276" level="INFO">Clicking element '//div/span[text()='Apps']'.</msg>
+<status status="PASS" starttime="20220728 03:20:44.276" endtime="20220728 03:20:44.324"/>
 </kw>
-<status status="PASS" starttime="20220728 02:24:45.343" endtime="20220728 02:24:45.392"/>
+<status status="PASS" starttime="20220728 03:20:44.276" endtime="20220728 03:20:44.324"/>
 </kw>
-<status status="PASS" starttime="20220728 02:24:45.276" endtime="20220728 02:24:45.392"/>
+<status status="PASS" starttime="20220728 03:20:44.208" endtime="20220728 03:20:44.324"/>
 </kw>
 <kw name="Run Keyword And Return Status" library="BuiltIn">
 <var>${present}</var>
@@ -442,19 +458,19 @@
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>${ADD_REFERENCE_KEY}[DMS]</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20220728 02:24:45.590" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-583.png"&gt;&lt;img src="selenium-screenshot-583.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20220728 02:24:45.591" level="FAIL">Element with locator '//button/span[text()='DMS']' not found.</msg>
-<status status="FAIL" starttime="20220728 02:24:45.393" endtime="20220728 02:24:45.592"/>
+<msg timestamp="20220728 03:20:44.727" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-129.png"&gt;&lt;img src="selenium-screenshot-129.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220728 03:20:44.728" level="FAIL">Element with locator '//button/span[text()='DMS']' not found.</msg>
+<status status="FAIL" starttime="20220728 03:20:44.324" endtime="20220728 03:20:44.852"/>
 </kw>
-<msg timestamp="20220728 02:24:45.592" level="INFO">${present} = False</msg>
-<status status="PASS" starttime="20220728 02:24:45.393" endtime="20220728 02:24:45.592"/>
+<msg timestamp="20220728 03:20:44.852" level="INFO">${present} = False</msg>
+<status status="PASS" starttime="20220728 03:20:44.324" endtime="20220728 03:20:44.852"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>${present}</arg>
 <arg>Click Item</arg>
 <arg>${ADD_REFERENCE_KEY}[DMS]</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" starttime="20220728 02:24:45.593" endtime="20220728 02:24:45.593"/>
+<status status="PASS" starttime="20220728 03:20:44.852" endtime="20220728 03:20:44.852"/>
 </kw>
 <kw name="Click Item" library="Common">
 <arg>//span[text()='Settings']</arg>
@@ -465,20 +481,20 @@
 <arg>${locator}</arg>
 <arg>timeout=60</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220728 02:24:45.594" endtime="20220728 02:24:45.623"/>
+<status status="PASS" starttime="20220728 03:20:44.853" endtime="20220728 03:20:44.883"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <arg>timeout=60</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220728 02:24:45.624" endtime="20220728 02:24:45.641"/>
+<status status="PASS" starttime="20220728 03:20:44.883" endtime="20220728 03:20:44.900"/>
 </kw>
 <kw name="Page Should Contain Element" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <arg>timeout=60</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20220728 02:24:45.647" level="INFO">Current page contains element '//span[text()='Settings']'.</msg>
-<status status="PASS" starttime="20220728 02:24:45.641" endtime="20220728 02:24:45.648"/>
+<msg timestamp="20220728 03:20:44.908" level="INFO">Current page contains element '//span[text()='Settings']'.</msg>
+<status status="PASS" starttime="20220728 03:20:44.900" endtime="20220728 03:20:44.908"/>
 </kw>
 <kw name="Wait Until Keyword Succeeds" library="BuiltIn">
 <arg>${TimeOut}</arg>
@@ -489,11 +505,11 @@
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220728 02:24:45.648" endtime="20220728 02:24:45.654"/>
+<status status="PASS" starttime="20220728 03:20:44.909" endtime="20220728 03:20:44.915"/>
 </kw>
-<status status="PASS" starttime="20220728 02:24:45.648" endtime="20220728 02:24:45.655"/>
+<status status="PASS" starttime="20220728 03:20:44.908" endtime="20220728 03:20:44.915"/>
 </kw>
-<status status="PASS" starttime="20220728 02:24:45.594" endtime="20220728 02:24:45.655"/>
+<status status="PASS" starttime="20220728 03:20:44.853" endtime="20220728 03:20:44.915"/>
 </kw>
 <kw name="Wait Until Keyword Succeeds" library="BuiltIn">
 <arg>${TimeOut}</arg>
@@ -504,12 +520,12 @@
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220728 02:24:45.656" level="INFO">Clicking element '//span[text()='Settings']'.</msg>
-<status status="PASS" starttime="20220728 02:24:45.655" endtime="20220728 02:24:45.697"/>
+<msg timestamp="20220728 03:20:44.916" level="INFO">Clicking element '//span[text()='Settings']'.</msg>
+<status status="PASS" starttime="20220728 03:20:44.916" endtime="20220728 03:20:44.958"/>
 </kw>
-<status status="PASS" starttime="20220728 02:24:45.655" endtime="20220728 02:24:45.697"/>
+<status status="PASS" starttime="20220728 03:20:44.915" endtime="20220728 03:20:44.958"/>
 </kw>
-<status status="PASS" starttime="20220728 02:24:45.594" endtime="20220728 02:24:45.697"/>
+<status status="PASS" starttime="20220728 03:20:44.853" endtime="20220728 03:20:44.958"/>
 </kw>
 <kw name="Click Item" library="Common">
 <arg>//a[normalize-space()='Configure Reference Key']</arg>
@@ -520,20 +536,20 @@
 <arg>${locator}</arg>
 <arg>timeout=60</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220728 02:24:45.698" endtime="20220728 02:24:45.728"/>
+<status status="PASS" starttime="20220728 03:20:44.959" endtime="20220728 03:20:44.989"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <arg>timeout=60</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220728 02:24:45.729" endtime="20220728 02:24:45.751"/>
+<status status="PASS" starttime="20220728 03:20:44.989" endtime="20220728 03:20:45.006"/>
 </kw>
 <kw name="Page Should Contain Element" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <arg>timeout=60</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20220728 02:24:45.758" level="INFO">Current page contains element '//a[normalize-space()='Configure Reference Key']'.</msg>
-<status status="PASS" starttime="20220728 02:24:45.751" endtime="20220728 02:24:45.758"/>
+<msg timestamp="20220728 03:20:45.013" level="INFO">Current page contains element '//a[normalize-space()='Configure Reference Key']'.</msg>
+<status status="PASS" starttime="20220728 03:20:45.006" endtime="20220728 03:20:45.013"/>
 </kw>
 <kw name="Wait Until Keyword Succeeds" library="BuiltIn">
 <arg>${TimeOut}</arg>
@@ -544,11 +560,11 @@
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220728 02:24:45.759" endtime="20220728 02:24:45.766"/>
+<status status="PASS" starttime="20220728 03:20:45.014" endtime="20220728 03:20:45.022"/>
 </kw>
-<status status="PASS" starttime="20220728 02:24:45.759" endtime="20220728 02:24:45.766"/>
+<status status="PASS" starttime="20220728 03:20:45.013" endtime="20220728 03:20:45.022"/>
 </kw>
-<status status="PASS" starttime="20220728 02:24:45.698" endtime="20220728 02:24:45.766"/>
+<status status="PASS" starttime="20220728 03:20:44.959" endtime="20220728 03:20:45.023"/>
 </kw>
 <kw name="Wait Until Keyword Succeeds" library="BuiltIn">
 <arg>${TimeOut}</arg>
@@ -559,13 +575,19 @@
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220728 02:24:45.767" level="INFO">Clicking element '//a[normalize-space()='Configure Reference Key']'.</msg>
-<status status="PASS" starttime="20220728 02:24:45.766" endtime="20220728 02:24:45.813"/>
+<msg timestamp="20220728 03:20:45.024" level="INFO">Clicking element '//a[normalize-space()='Configure Reference Key']'.</msg>
+<status status="PASS" starttime="20220728 03:20:45.024" endtime="20220728 03:20:45.072"/>
 </kw>
-<status status="PASS" starttime="20220728 02:24:45.766" endtime="20220728 02:24:45.814"/>
+<status status="PASS" starttime="20220728 03:20:45.023" endtime="20220728 03:20:45.072"/>
 </kw>
-<status status="PASS" starttime="20220728 02:24:45.697" endtime="20220728 02:24:45.814"/>
+<status status="PASS" starttime="20220728 03:20:44.958" endtime="20220728 03:20:45.072"/>
 </kw>
+<for flavor="IN RANGE">
+<var>${i}</var>
+<value>0</value>
+<value>${row}-1</value>
+<iter>
+<var name="${i}">0</var>
 <kw name="Click Item" library="Common">
 <arg>//div[@class=' css-ackcql']</arg>
 <kw name="Verify elements is visible and displayed" library="Common">
@@ -575,20 +597,20 @@
 <arg>${locator}</arg>
 <arg>timeout=60</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220728 02:24:45.817" endtime="20220728 02:24:50.675"/>
+<status status="PASS" starttime="20220728 03:20:45.073" endtime="20220728 03:20:51.327"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <arg>timeout=60</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220728 02:24:50.675" endtime="20220728 02:24:50.693"/>
+<status status="PASS" starttime="20220728 03:20:51.328" endtime="20220728 03:20:51.347"/>
 </kw>
 <kw name="Page Should Contain Element" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <arg>timeout=60</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20220728 02:24:50.700" level="INFO">Current page contains element '//div[@class=' css-ackcql']'.</msg>
-<status status="PASS" starttime="20220728 02:24:50.693" endtime="20220728 02:24:50.700"/>
+<msg timestamp="20220728 03:20:51.354" level="INFO">Current page contains element '//div[@class=' css-ackcql']'.</msg>
+<status status="PASS" starttime="20220728 03:20:51.347" endtime="20220728 03:20:51.354"/>
 </kw>
 <kw name="Wait Until Keyword Succeeds" library="BuiltIn">
 <arg>${TimeOut}</arg>
@@ -599,11 +621,11 @@
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220728 02:24:50.700" endtime="20220728 02:24:50.707"/>
+<status status="PASS" starttime="20220728 03:20:51.355" endtime="20220728 03:20:51.362"/>
 </kw>
-<status status="PASS" starttime="20220728 02:24:50.700" endtime="20220728 02:24:50.707"/>
+<status status="PASS" starttime="20220728 03:20:51.354" endtime="20220728 03:20:51.362"/>
 </kw>
-<status status="PASS" starttime="20220728 02:24:45.816" endtime="20220728 02:24:50.707"/>
+<status status="PASS" starttime="20220728 03:20:45.073" endtime="20220728 03:20:51.363"/>
 </kw>
 <kw name="Wait Until Keyword Succeeds" library="BuiltIn">
 <arg>${TimeOut}</arg>
@@ -614,12 +636,12 @@
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220728 02:24:50.708" level="INFO">Clicking element '//div[@class=' css-ackcql']'.</msg>
-<status status="PASS" starttime="20220728 02:24:50.708" endtime="20220728 02:24:50.776"/>
+<msg timestamp="20220728 03:20:51.363" level="INFO">Clicking element '//div[@class=' css-ackcql']'.</msg>
+<status status="PASS" starttime="20220728 03:20:51.363" endtime="20220728 03:20:51.433"/>
 </kw>
-<status status="PASS" starttime="20220728 02:24:50.707" endtime="20220728 02:24:50.776"/>
+<status status="PASS" starttime="20220728 03:20:51.363" endtime="20220728 03:20:51.434"/>
 </kw>
-<status status="PASS" starttime="20220728 02:24:45.815" endtime="20220728 02:24:50.776"/>
+<status status="PASS" starttime="20220728 03:20:45.073" endtime="20220728 03:20:51.434"/>
 </kw>
 <kw name="Click Item" library="Common">
 <arg>//button[@class='btn drop-down-button btn-sm btn-block cursor']</arg>
@@ -630,20 +652,20 @@
 <arg>${locator}</arg>
 <arg>timeout=60</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220728 02:24:50.778" endtime="20220728 02:24:50.811"/>
+<status status="PASS" starttime="20220728 03:20:51.436" endtime="20220728 03:20:51.471"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <arg>timeout=60</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220728 02:24:50.811" endtime="20220728 02:24:50.830"/>
+<status status="PASS" starttime="20220728 03:20:51.471" endtime="20220728 03:20:51.487"/>
 </kw>
 <kw name="Page Should Contain Element" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <arg>timeout=60</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20220728 02:24:50.838" level="INFO">Current page contains element '//button[@class='btn drop-down-button btn-sm btn-block cursor']'.</msg>
-<status status="PASS" starttime="20220728 02:24:50.830" endtime="20220728 02:24:50.838"/>
+<msg timestamp="20220728 03:20:51.494" level="INFO">Current page contains element '//button[@class='btn drop-down-button btn-sm btn-block cursor']'.</msg>
+<status status="PASS" starttime="20220728 03:20:51.488" endtime="20220728 03:20:51.494"/>
 </kw>
 <kw name="Wait Until Keyword Succeeds" library="BuiltIn">
 <arg>${TimeOut}</arg>
@@ -654,11 +676,11 @@
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220728 02:24:50.839" endtime="20220728 02:24:50.845"/>
+<status status="PASS" starttime="20220728 03:20:51.494" endtime="20220728 03:20:51.502"/>
 </kw>
-<status status="PASS" starttime="20220728 02:24:50.838" endtime="20220728 02:24:50.845"/>
+<status status="PASS" starttime="20220728 03:20:51.494" endtime="20220728 03:20:51.502"/>
 </kw>
-<status status="PASS" starttime="20220728 02:24:50.777" endtime="20220728 02:24:50.845"/>
+<status status="PASS" starttime="20220728 03:20:51.435" endtime="20220728 03:20:51.502"/>
 </kw>
 <kw name="Wait Until Keyword Succeeds" library="BuiltIn">
 <arg>${TimeOut}</arg>
@@ -669,58 +691,111 @@
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220728 02:24:50.846" level="INFO">Clicking element '//button[@class='btn drop-down-button btn-sm btn-block cursor']'.</msg>
-<msg timestamp="20220728 02:24:51.130" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-584.png"&gt;&lt;img src="selenium-screenshot-584.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20220728 02:24:51.130" level="FAIL">StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+<msg timestamp="20220728 03:20:51.504" level="INFO">Clicking element '//button[@class='btn drop-down-button btn-sm btn-block cursor']'.</msg>
+<msg timestamp="20220728 03:20:52.643" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-130.png"&gt;&lt;img src="selenium-screenshot-130.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220728 03:20:52.644" level="FAIL">StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
   (Session info: chrome=103.0.5060.134)
 Stacktrace:
 Backtrace:
-	Ordinal0 [0x002C6463+2188387]
-	Ordinal0 [0x0025E461+1762401]
-	Ordinal0 [0x00173D78+802168]
-	Ordinal0 [0x00176754+812884]
-	Ordinal0 [0x00176612+812562]
-	Ordinal0 [0x001768A0+813216]
-	Ordinal0 [0x001A7D63+1015139]
-	Ordinal0 [0x001A5F68+1007464]
-	Ordinal0 [0x001A3C6B+998507]
-	Ordinal0 [0x001A29D9+993753]
-	Ordinal0 [0x00198613+951827]
-	Ordinal0 [0x001BC7DC+1099740]
-	Ordinal0 [0x00197FF4+950260]
-	Ordinal0 [0x001BC9F4+1100276]
-	Ordinal0 [0x001CCC22+1166370]
-	Ordinal0 [0x001BC5F6+1099254]
-	Ordinal0 [0x00196BE0+945120]
-	Ordinal0 [0x00197AD6+948950]
-	GetHandleVerifier [0x005671F2+2712546]
-	GetHandleVerifier [0x0055886D+2652765]
-	GetHandleVerifier [0x0035002A+520730]
-	GetHandleVerifier [0x0034EE06+516086]
-	Ordinal0 [0x0026468B+1787531]
-	Ordinal0 [0x00268E88+1805960]
-	Ordinal0 [0x00268F75+1806197]
-	Ordinal0 [0x00271DF1+1842673]
+	Ordinal0 [0x00226463+2188387]
+	Ordinal0 [0x001BE461+1762401]
+	Ordinal0 [0x000D3D78+802168]
+	Ordinal0 [0x000D6754+812884]
+	Ordinal0 [0x000D6612+812562]
+	Ordinal0 [0x000D68A0+813216]
+	Ordinal0 [0x00107D63+1015139]
+	Ordinal0 [0x00105F68+1007464]
+	Ordinal0 [0x00103C6B+998507]
+	Ordinal0 [0x001029D9+993753]
+	Ordinal0 [0x000F8613+951827]
+	Ordinal0 [0x0011C7DC+1099740]
+	Ordinal0 [0x000F7FF4+950260]
+	Ordinal0 [0x0011C9F4+1100276]
+	Ordinal0 [0x0012CC22+1166370]
+	Ordinal0 [0x0011C5F6+1099254]
+	Ordinal0 [0x000F6BE0+945120]
+	Ordinal0 [0x000F7AD6+948950]
+	GetHandleVerifier [0x004C71F2+2712546]
+	GetHandleVerifier [0x004B886D+2652765]
+	GetHandleVerifier [0x002B002A+520730]
+	GetHandleVerifier [0x002AEE06+516086]
+	Ordinal0 [0x001C468B+1787531]
+	Ordinal0 [0x001C8E88+1805960]
+	Ordinal0 [0x001C8F75+1806197]
+	Ordinal0 [0x001D1DF1+1842673]
 	BaseThreadInitThunk [0x7595FA29+25]
 	RtlGetAppContainerNamedObjectPath [0x77697A9E+286]
 	RtlGetAppContainerNamedObjectPath [0x77697A6E+238]
 	(No symbol) [0x00000000]
 </msg>
-<status status="FAIL" starttime="20220728 02:24:50.846" endtime="20220728 02:24:51.132"/>
+<status status="FAIL" starttime="20220728 03:20:51.504" endtime="20220728 03:20:52.757"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220728 02:24:52.145" level="INFO">Clicking element '//button[@class='btn drop-down-button btn-sm btn-block cursor']'.</msg>
-<status status="PASS" starttime="20220728 02:24:52.144" endtime="20220728 02:24:52.212"/>
+<msg timestamp="20220728 03:20:53.763" level="INFO">Clicking element '//button[@class='btn drop-down-button btn-sm btn-block cursor']'.</msg>
+<status status="PASS" starttime="20220728 03:20:53.763" endtime="20220728 03:20:53.818"/>
 </kw>
-<status status="PASS" starttime="20220728 02:24:50.845" endtime="20220728 02:24:52.212"/>
+<status status="PASS" starttime="20220728 03:20:51.502" endtime="20220728 03:20:53.818"/>
 </kw>
-<status status="PASS" starttime="20220728 02:24:50.777" endtime="20220728 02:24:52.212"/>
+<status status="PASS" starttime="20220728 03:20:51.434" endtime="20220728 03:20:53.818"/>
+</kw>
+<kw name="Fetch Row Data" library="Read_TestData_Keyword">
+<var>${data}</var>
+<arg>${SMARTFREN_TESTDATA}</arg>
+<arg>SMARTFERN_ADD_REFERNCE_KEY</arg>
+<arg>${i}</arg>
+<kw name="Fetch Row" library="ReadDataFromExcel">
+<var>${rowdata}</var>
+<arg>${filename}</arg>
+<arg>${sheetname}</arg>
+<arg>${row}</arg>
+<msg timestamp="20220728 03:20:55.886" level="INFO">${rowdata} =   DUPLICATE_ENTRY TestCaseId TestDataId  Scenario DROP_DOWN              MESSAGE
+0     TC_001TD_01     TC_001      TD_01  NEGATIVE  TEST_314  cofig exits by name</msg>
+<status status="PASS" starttime="20220728 03:20:53.819" endtime="20220728 03:20:55.886"/>
+</kw>
+<msg timestamp="20220728 03:20:55.898" level="INFO">${data} =   DUPLICATE_ENTRY TestCaseId TestDataId  Scenario DROP_DOWN              MESSAGE
+0     TC_001TD_01     TC_001      TD_01  NEGATIVE  TEST_314  cofig exits by name</msg>
+<status status="PASS" starttime="20220728 03:20:53.818" endtime="20220728 03:20:55.898"/>
+</kw>
+<kw name="Get Value1" library="ReadDataFromExcel">
+<var>${DROP_DOWN}</var>
+<arg>${data}</arg>
+<arg>DROP_DOWN</arg>
+<msg timestamp="20220728 03:20:55.899" level="INFO">${DROP_DOWN} = TEST_314</msg>
+<status status="PASS" starttime="20220728 03:20:55.899" endtime="20220728 03:20:55.899"/>
+</kw>
+<kw name="Get Value1" library="ReadDataFromExcel">
+<var>${Scenario}</var>
+<arg>${data}</arg>
+<arg>Scenario</arg>
+<msg timestamp="20220728 03:20:55.900" level="INFO">${Scenario} = NEGATIVE</msg>
+<status status="PASS" starttime="20220728 03:20:55.899" endtime="20220728 03:20:55.900"/>
+</kw>
+<kw name="Get Value1" library="ReadDataFromExcel">
+<var>${MESSAGE}</var>
+<arg>${data}</arg>
+<arg>MESSAGE</arg>
+<msg timestamp="20220728 03:20:55.900" level="INFO">${MESSAGE} = cofig exits by name</msg>
+<status status="PASS" starttime="20220728 03:20:55.900" endtime="20220728 03:20:55.900"/>
+</kw>
+<kw name="Get Value1" library="ReadDataFromExcel">
+<var>${TestCaseId}</var>
+<arg>${data}</arg>
+<arg>TestCaseId</arg>
+<msg timestamp="20220728 03:20:55.901" level="INFO">${TestCaseId} = TC_001</msg>
+<status status="PASS" starttime="20220728 03:20:55.901" endtime="20220728 03:20:55.901"/>
+</kw>
+<kw name="Get Value1" library="ReadDataFromExcel">
+<var>${TestDataId}</var>
+<arg>${data}</arg>
+<arg>TestDataId</arg>
+<msg timestamp="20220728 03:20:55.902" level="INFO">${TestDataId} = TD_01</msg>
+<status status="PASS" starttime="20220728 03:20:55.901" endtime="20220728 03:20:55.902"/>
 </kw>
 <kw name="Set Input" library="Common">
 <arg>//input[@id='dropDownValue__id']</arg>
-<arg>Test_11</arg>
+<arg>${DROP_DOWN}</arg>
 <kw name="Click Item" library="Common">
 <arg>${locator}</arg>
 <kw name="Verify elements is visible and displayed" library="Common">
@@ -730,20 +805,20 @@ Backtrace:
 <arg>${locator}</arg>
 <arg>timeout=60</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220728 02:24:52.215" endtime="20220728 02:24:52.251"/>
+<status status="PASS" starttime="20220728 03:20:55.903" endtime="20220728 03:20:55.932"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <arg>timeout=60</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220728 02:24:52.252" endtime="20220728 02:24:52.722"/>
+<status status="PASS" starttime="20220728 03:20:55.932" endtime="20220728 03:20:55.948"/>
 </kw>
 <kw name="Page Should Contain Element" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <arg>timeout=60</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20220728 02:24:52.733" level="INFO">Current page contains element '//input[@id='dropDownValue__id']'.</msg>
-<status status="PASS" starttime="20220728 02:24:52.722" endtime="20220728 02:24:52.733"/>
+<msg timestamp="20220728 03:20:55.955" level="INFO">Current page contains element '//input[@id='dropDownValue__id']'.</msg>
+<status status="PASS" starttime="20220728 03:20:55.948" endtime="20220728 03:20:55.955"/>
 </kw>
 <kw name="Wait Until Keyword Succeeds" library="BuiltIn">
 <arg>${TimeOut}</arg>
@@ -754,11 +829,11 @@ Backtrace:
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220728 02:24:52.733" endtime="20220728 02:24:52.742"/>
+<status status="PASS" starttime="20220728 03:20:55.955" endtime="20220728 03:20:55.964"/>
 </kw>
-<status status="PASS" starttime="20220728 02:24:52.733" endtime="20220728 02:24:52.742"/>
+<status status="PASS" starttime="20220728 03:20:55.955" endtime="20220728 03:20:55.964"/>
 </kw>
-<status status="PASS" starttime="20220728 02:24:52.214" endtime="20220728 02:24:52.742"/>
+<status status="PASS" starttime="20220728 03:20:55.903" endtime="20220728 03:20:55.964"/>
 </kw>
 <kw name="Wait Until Keyword Succeeds" library="BuiltIn">
 <arg>${TimeOut}</arg>
@@ -769,12 +844,12 @@ Backtrace:
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220728 02:24:52.743" level="INFO">Clicking element '//input[@id='dropDownValue__id']'.</msg>
-<status status="PASS" starttime="20220728 02:24:52.743" endtime="20220728 02:24:52.797"/>
+<msg timestamp="20220728 03:20:55.965" level="INFO">Clicking element '//input[@id='dropDownValue__id']'.</msg>
+<status status="PASS" starttime="20220728 03:20:55.965" endtime="20220728 03:20:56.008"/>
 </kw>
-<status status="PASS" starttime="20220728 02:24:52.742" endtime="20220728 02:24:52.797"/>
+<status status="PASS" starttime="20220728 03:20:55.964" endtime="20220728 03:20:56.008"/>
 </kw>
-<status status="PASS" starttime="20220728 02:24:52.214" endtime="20220728 02:24:52.797"/>
+<status status="PASS" starttime="20220728 03:20:55.902" endtime="20220728 03:20:56.009"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>'${value}' == 'nan'</arg>
@@ -807,14 +882,14 @@ Backtrace:
 <arg>${locator}</arg>
 <arg>${value}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220728 02:24:52.798" level="INFO">Typing text 'Test_11' into text field '//input[@id='dropDownValue__id']'.</msg>
-<status status="PASS" starttime="20220728 02:24:52.798" endtime="20220728 02:24:52.896"/>
+<msg timestamp="20220728 03:20:56.010" level="INFO">Typing text 'TEST_314' into text field '//input[@id='dropDownValue__id']'.</msg>
+<status status="PASS" starttime="20220728 03:20:56.010" endtime="20220728 03:20:56.082"/>
 </kw>
-<status status="PASS" starttime="20220728 02:24:52.797" endtime="20220728 02:24:52.896"/>
+<status status="PASS" starttime="20220728 03:20:56.010" endtime="20220728 03:20:56.082"/>
 </kw>
-<status status="PASS" starttime="20220728 02:24:52.797" endtime="20220728 02:24:52.896"/>
+<status status="PASS" starttime="20220728 03:20:56.009" endtime="20220728 03:20:56.082"/>
 </kw>
-<status status="PASS" starttime="20220728 02:24:52.213" endtime="20220728 02:24:52.896"/>
+<status status="PASS" starttime="20220728 03:20:55.902" endtime="20220728 03:20:56.082"/>
 </kw>
 <kw name="Click Item" library="Common">
 <arg>//div[normalize-space()='Create']</arg>
@@ -825,20 +900,20 @@ Backtrace:
 <arg>${locator}</arg>
 <arg>timeout=60</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220728 02:24:52.898" endtime="20220728 02:24:52.934"/>
+<status status="PASS" starttime="20220728 03:20:56.083" endtime="20220728 03:20:56.112"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <arg>timeout=60</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220728 02:24:52.934" endtime="20220728 02:24:52.952"/>
+<status status="PASS" starttime="20220728 03:20:56.112" endtime="20220728 03:20:56.131"/>
 </kw>
 <kw name="Page Should Contain Element" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <arg>timeout=60</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20220728 02:24:52.961" level="INFO">Current page contains element '//div[normalize-space()='Create']'.</msg>
-<status status="PASS" starttime="20220728 02:24:52.952" endtime="20220728 02:24:52.961"/>
+<msg timestamp="20220728 03:20:56.139" level="INFO">Current page contains element '//div[normalize-space()='Create']'.</msg>
+<status status="PASS" starttime="20220728 03:20:56.131" endtime="20220728 03:20:56.139"/>
 </kw>
 <kw name="Wait Until Keyword Succeeds" library="BuiltIn">
 <arg>${TimeOut}</arg>
@@ -849,11 +924,11 @@ Backtrace:
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220728 02:24:52.962" endtime="20220728 02:24:52.969"/>
+<status status="PASS" starttime="20220728 03:20:56.140" endtime="20220728 03:20:56.149"/>
 </kw>
-<status status="PASS" starttime="20220728 02:24:52.962" endtime="20220728 02:24:52.969"/>
+<status status="PASS" starttime="20220728 03:20:56.139" endtime="20220728 03:20:56.149"/>
 </kw>
-<status status="PASS" starttime="20220728 02:24:52.897" endtime="20220728 02:24:52.969"/>
+<status status="PASS" starttime="20220728 03:20:56.083" endtime="20220728 03:20:56.149"/>
 </kw>
 <kw name="Wait Until Keyword Succeeds" library="BuiltIn">
 <arg>${TimeOut}</arg>
@@ -864,18 +939,1451 @@ Backtrace:
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220728 02:24:52.970" level="INFO">Clicking element '//div[normalize-space()='Create']'.</msg>
-<status status="PASS" starttime="20220728 02:24:52.970" endtime="20220728 02:24:53.014"/>
+<msg timestamp="20220728 03:20:56.150" level="INFO">Clicking element '//div[normalize-space()='Create']'.</msg>
+<status status="PASS" starttime="20220728 03:20:56.150" endtime="20220728 03:20:56.203"/>
 </kw>
-<status status="PASS" starttime="20220728 02:24:52.969" endtime="20220728 02:24:53.014"/>
+<status status="PASS" starttime="20220728 03:20:56.149" endtime="20220728 03:20:56.203"/>
 </kw>
-<status status="PASS" starttime="20220728 02:24:52.897" endtime="20220728 02:24:53.014"/>
+<status status="PASS" starttime="20220728 03:20:56.082" endtime="20220728 03:20:56.203"/>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220728 02:24:58.020" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20220728 02:24:53.015" endtime="20220728 02:24:58.020"/>
+<if>
+<branch type="IF" condition="'${Scenario}' == 'POSITIVE'">
+<kw name="Verify elements is visible and displayed" library="Common">
+<arg>//div[contains(text(),'${MESSAGE}')]</arg>
+<doc>Keyword to verify locator is enabled and visibled on a page.</doc>
+<status status="NOT RUN" starttime="20220728 03:20:56.203" endtime="20220728 03:20:56.203"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>${SCREENSHOT_LOC}/ADD_REFERENCE_KEY_${TestCaseId}_${TestDataId}_${Scenario}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" starttime="20220728 03:20:56.204" endtime="20220728 03:20:56.204"/>
+</kw>
+<status status="NOT RUN" starttime="20220728 03:20:56.203" endtime="20220728 03:20:56.204"/>
+</branch>
+<status status="PASS" starttime="20220728 03:20:56.203" endtime="20220728 03:20:56.204"/>
+</if>
+<if>
+<branch type="IF" condition="'${Scenario}' == 'NEGATIVE'">
+<kw name="Log To Console" library="BuiltIn">
+<arg>negative</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220728 03:20:56.204" endtime="20220728 03:20:56.204"/>
+</kw>
+<kw name="Verify elements is visible and displayed" library="Common">
+<arg>//div[contains(text(),'${MESSAGE}')]</arg>
+<doc>Keyword to verify locator is enabled and visibled on a page.</doc>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=60</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220728 03:20:56.205" endtime="20220728 03:20:56.459"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=60</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220728 03:20:56.459" endtime="20220728 03:20:56.740"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=60</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20220728 03:20:56.753" level="INFO">Current page contains element '//div[contains(text(),'cofig exits by name')]'.</msg>
+<status status="PASS" starttime="20220728 03:20:56.740" endtime="20220728 03:20:56.753"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>${TimeOut}</arg>
+<arg>${Start}</arg>
+<arg>wait until page contains element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220728 03:20:56.754" endtime="20220728 03:20:56.764"/>
+</kw>
+<status status="PASS" starttime="20220728 03:20:56.754" endtime="20220728 03:20:56.764"/>
+</kw>
+<status status="PASS" starttime="20220728 03:20:56.204" endtime="20220728 03:20:56.765"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>${SCREENSHOT_LOC}/ADD_REFERENCE_KEY_${TestCaseId}_${TestDataId}_${Scenario}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220728 03:20:56.924" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="ScreenShots/ADD_REFERENCE_KEY_TC_001_TD_01_NEGATIVE.png"&gt;&lt;img src="ScreenShots/ADD_REFERENCE_KEY_TC_001_TD_01_NEGATIVE.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220728 03:20:56.765" endtime="20220728 03:20:56.924"/>
+</kw>
+<kw name="Click Item" library="Common">
+<arg>//div[contains(text(),' Cancel')]</arg>
+<kw name="Verify elements is visible and displayed" library="Common">
+<arg>${locator}</arg>
+<doc>Keyword to verify locator is enabled and visibled on a page.</doc>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=60</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220728 03:20:56.925" endtime="20220728 03:20:56.955"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=60</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220728 03:20:56.955" endtime="20220728 03:20:56.973"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=60</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20220728 03:20:56.980" level="INFO">Current page contains element '//div[contains(text(),' Cancel')]'.</msg>
+<status status="PASS" starttime="20220728 03:20:56.973" endtime="20220728 03:20:56.980"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>${TimeOut}</arg>
+<arg>${Start}</arg>
+<arg>wait until page contains element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220728 03:20:56.981" endtime="20220728 03:20:56.988"/>
+</kw>
+<status status="PASS" starttime="20220728 03:20:56.980" endtime="20220728 03:20:56.988"/>
+</kw>
+<status status="PASS" starttime="20220728 03:20:56.925" endtime="20220728 03:20:56.988"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>${TimeOut}</arg>
+<arg>${Start}</arg>
+<arg>click element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220728 03:20:56.989" level="INFO">Clicking element '//div[contains(text(),' Cancel')]'.</msg>
+<status status="PASS" starttime="20220728 03:20:56.989" endtime="20220728 03:20:57.028"/>
+</kw>
+<status status="PASS" starttime="20220728 03:20:56.989" endtime="20220728 03:20:57.028"/>
+</kw>
+<status status="PASS" starttime="20220728 03:20:56.924" endtime="20220728 03:20:57.028"/>
+</kw>
+<status status="PASS" starttime="20220728 03:20:56.204" endtime="20220728 03:20:57.028"/>
+</branch>
+<status status="PASS" starttime="20220728 03:20:56.204" endtime="20220728 03:20:57.028"/>
+</if>
+<status status="PASS" starttime="20220728 03:20:45.073" endtime="20220728 03:20:57.028"/>
+</iter>
+<iter>
+<var name="${i}">1</var>
+<kw name="Click Item" library="Common">
+<arg>//div[@class=' css-ackcql']</arg>
+<kw name="Verify elements is visible and displayed" library="Common">
+<arg>${locator}</arg>
+<doc>Keyword to verify locator is enabled and visibled on a page.</doc>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=60</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220728 03:20:57.029" endtime="20220728 03:20:57.056"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=60</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220728 03:20:57.057" endtime="20220728 03:20:57.078"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=60</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20220728 03:20:57.090" level="INFO">Current page contains element '//div[@class=' css-ackcql']'.</msg>
+<status status="PASS" starttime="20220728 03:20:57.078" endtime="20220728 03:20:57.090"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>${TimeOut}</arg>
+<arg>${Start}</arg>
+<arg>wait until page contains element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220728 03:20:57.091" endtime="20220728 03:20:57.098"/>
+</kw>
+<status status="PASS" starttime="20220728 03:20:57.091" endtime="20220728 03:20:57.098"/>
+</kw>
+<status status="PASS" starttime="20220728 03:20:57.028" endtime="20220728 03:20:57.098"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>${TimeOut}</arg>
+<arg>${Start}</arg>
+<arg>click element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220728 03:20:57.099" level="INFO">Clicking element '//div[@class=' css-ackcql']'.</msg>
+<status status="PASS" starttime="20220728 03:20:57.099" endtime="20220728 03:20:57.406"/>
+</kw>
+<status status="PASS" starttime="20220728 03:20:57.099" endtime="20220728 03:20:57.406"/>
+</kw>
+<status status="PASS" starttime="20220728 03:20:57.028" endtime="20220728 03:20:57.407"/>
+</kw>
+<kw name="Click Item" library="Common">
+<arg>//button[@class='btn drop-down-button btn-sm btn-block cursor']</arg>
+<kw name="Verify elements is visible and displayed" library="Common">
+<arg>${locator}</arg>
+<doc>Keyword to verify locator is enabled and visibled on a page.</doc>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=60</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220728 03:20:57.407" endtime="20220728 03:20:57.440"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=60</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220728 03:20:57.440" endtime="20220728 03:20:57.462"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=60</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20220728 03:20:57.473" level="INFO">Current page contains element '//button[@class='btn drop-down-button btn-sm btn-block cursor']'.</msg>
+<status status="PASS" starttime="20220728 03:20:57.462" endtime="20220728 03:20:57.473"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>${TimeOut}</arg>
+<arg>${Start}</arg>
+<arg>wait until page contains element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220728 03:20:57.474" endtime="20220728 03:20:57.482"/>
+</kw>
+<status status="PASS" starttime="20220728 03:20:57.473" endtime="20220728 03:20:57.483"/>
+</kw>
+<status status="PASS" starttime="20220728 03:20:57.407" endtime="20220728 03:20:57.483"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>${TimeOut}</arg>
+<arg>${Start}</arg>
+<arg>click element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220728 03:20:57.484" level="INFO">Clicking element '//button[@class='btn drop-down-button btn-sm btn-block cursor']'.</msg>
+<msg timestamp="20220728 03:20:57.748" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-131.png"&gt;&lt;img src="selenium-screenshot-131.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220728 03:20:57.749" level="FAIL">StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=103.0.5060.134)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00226463+2188387]
+	Ordinal0 [0x001BE461+1762401]
+	Ordinal0 [0x000D3D78+802168]
+	Ordinal0 [0x000D6754+812884]
+	Ordinal0 [0x000D6612+812562]
+	Ordinal0 [0x000D68A0+813216]
+	Ordinal0 [0x00107D63+1015139]
+	Ordinal0 [0x00105F68+1007464]
+	Ordinal0 [0x00103C6B+998507]
+	Ordinal0 [0x001029D9+993753]
+	Ordinal0 [0x000F8613+951827]
+	Ordinal0 [0x0011C7DC+1099740]
+	Ordinal0 [0x000F7FF4+950260]
+	Ordinal0 [0x0011C9F4+1100276]
+	Ordinal0 [0x0012CC22+1166370]
+	Ordinal0 [0x0011C5F6+1099254]
+	Ordinal0 [0x000F6BE0+945120]
+	Ordinal0 [0x000F7AD6+948950]
+	GetHandleVerifier [0x004C71F2+2712546]
+	GetHandleVerifier [0x004B886D+2652765]
+	GetHandleVerifier [0x002B002A+520730]
+	GetHandleVerifier [0x002AEE06+516086]
+	Ordinal0 [0x001C468B+1787531]
+	Ordinal0 [0x001C8E88+1805960]
+	Ordinal0 [0x001C8F75+1806197]
+	Ordinal0 [0x001D1DF1+1842673]
+	BaseThreadInitThunk [0x7595FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77697A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77697A6E+238]
+	(No symbol) [0x00000000]
+</msg>
+<status status="FAIL" starttime="20220728 03:20:57.483" endtime="20220728 03:20:57.749"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220728 03:20:58.753" level="INFO">Clicking element '//button[@class='btn drop-down-button btn-sm btn-block cursor']'.</msg>
+<status status="PASS" starttime="20220728 03:20:58.753" endtime="20220728 03:20:58.803"/>
+</kw>
+<status status="PASS" starttime="20220728 03:20:57.483" endtime="20220728 03:20:58.803"/>
+</kw>
+<status status="PASS" starttime="20220728 03:20:57.407" endtime="20220728 03:20:58.803"/>
+</kw>
+<kw name="Fetch Row Data" library="Read_TestData_Keyword">
+<var>${data}</var>
+<arg>${SMARTFREN_TESTDATA}</arg>
+<arg>SMARTFERN_ADD_REFERNCE_KEY</arg>
+<arg>${i}</arg>
+<kw name="Fetch Row" library="ReadDataFromExcel">
+<var>${rowdata}</var>
+<arg>${filename}</arg>
+<arg>${sheetname}</arg>
+<arg>${row}</arg>
+<msg timestamp="20220728 03:20:58.832" level="INFO">${rowdata} =   DUPLICATE_ENTRY TestCaseId TestDataId  Scenario DROP_DOWN                     MESSAGE
+1     TC_001TD_02     TC_001      TD_02  POSITIVE  TEST_320  Cofig Created Successfully</msg>
+<status status="PASS" starttime="20220728 03:20:58.805" endtime="20220728 03:20:58.832"/>
+</kw>
+<msg timestamp="20220728 03:20:58.841" level="INFO">${data} =   DUPLICATE_ENTRY TestCaseId TestDataId  Scenario DROP_DOWN                     MESSAGE
+1     TC_001TD_02     TC_001      TD_02  POSITIVE  TEST_320  Cofig Created Successfully</msg>
+<status status="PASS" starttime="20220728 03:20:58.804" endtime="20220728 03:20:58.841"/>
+</kw>
+<kw name="Get Value1" library="ReadDataFromExcel">
+<var>${DROP_DOWN}</var>
+<arg>${data}</arg>
+<arg>DROP_DOWN</arg>
+<msg timestamp="20220728 03:20:58.841" level="INFO">${DROP_DOWN} = TEST_320</msg>
+<status status="PASS" starttime="20220728 03:20:58.841" endtime="20220728 03:20:58.841"/>
+</kw>
+<kw name="Get Value1" library="ReadDataFromExcel">
+<var>${Scenario}</var>
+<arg>${data}</arg>
+<arg>Scenario</arg>
+<msg timestamp="20220728 03:20:58.842" level="INFO">${Scenario} = POSITIVE</msg>
+<status status="PASS" starttime="20220728 03:20:58.842" endtime="20220728 03:20:58.842"/>
+</kw>
+<kw name="Get Value1" library="ReadDataFromExcel">
+<var>${MESSAGE}</var>
+<arg>${data}</arg>
+<arg>MESSAGE</arg>
+<msg timestamp="20220728 03:20:58.842" level="INFO">${MESSAGE} = Cofig Created Successfully</msg>
+<status status="PASS" starttime="20220728 03:20:58.842" endtime="20220728 03:20:58.842"/>
+</kw>
+<kw name="Get Value1" library="ReadDataFromExcel">
+<var>${TestCaseId}</var>
+<arg>${data}</arg>
+<arg>TestCaseId</arg>
+<msg timestamp="20220728 03:20:58.843" level="INFO">${TestCaseId} = TC_001</msg>
+<status status="PASS" starttime="20220728 03:20:58.842" endtime="20220728 03:20:58.843"/>
+</kw>
+<kw name="Get Value1" library="ReadDataFromExcel">
+<var>${TestDataId}</var>
+<arg>${data}</arg>
+<arg>TestDataId</arg>
+<msg timestamp="20220728 03:20:58.843" level="INFO">${TestDataId} = TD_02</msg>
+<status status="PASS" starttime="20220728 03:20:58.843" endtime="20220728 03:20:58.843"/>
+</kw>
+<kw name="Set Input" library="Common">
+<arg>//input[@id='dropDownValue__id']</arg>
+<arg>${DROP_DOWN}</arg>
+<kw name="Click Item" library="Common">
+<arg>${locator}</arg>
+<kw name="Verify elements is visible and displayed" library="Common">
+<arg>${locator}</arg>
+<doc>Keyword to verify locator is enabled and visibled on a page.</doc>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=60</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220728 03:20:58.844" endtime="20220728 03:20:58.874"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=60</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220728 03:20:58.874" endtime="20220728 03:20:59.348"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=60</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20220728 03:20:59.356" level="INFO">Current page contains element '//input[@id='dropDownValue__id']'.</msg>
+<status status="PASS" starttime="20220728 03:20:59.348" endtime="20220728 03:20:59.356"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>${TimeOut}</arg>
+<arg>${Start}</arg>
+<arg>wait until page contains element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220728 03:20:59.356" endtime="20220728 03:20:59.363"/>
+</kw>
+<status status="PASS" starttime="20220728 03:20:59.356" endtime="20220728 03:20:59.363"/>
+</kw>
+<status status="PASS" starttime="20220728 03:20:58.844" endtime="20220728 03:20:59.363"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>${TimeOut}</arg>
+<arg>${Start}</arg>
+<arg>click element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220728 03:20:59.364" level="INFO">Clicking element '//input[@id='dropDownValue__id']'.</msg>
+<status status="PASS" starttime="20220728 03:20:59.364" endtime="20220728 03:20:59.416"/>
+</kw>
+<status status="PASS" starttime="20220728 03:20:59.363" endtime="20220728 03:20:59.416"/>
+</kw>
+<status status="PASS" starttime="20220728 03:20:58.843" endtime="20220728 03:20:59.417"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${value}' == 'nan'</arg>
+<arg>Log To Console</arg>
+<arg>NANACONDITION</arg>
+<arg>ELSE IF</arg>
+<arg>'${value}' == 'BLANK'</arg>
+<arg>Wait Until Keyword Succeeds</arg>
+<arg>${TimeOut}</arg>
+<arg>${Start}</arg>
+<arg>input text</arg>
+<arg>${locator}</arg>
+<arg>\</arg>
+<arg>ELSE</arg>
+<arg>Wait Until Keyword Succeeds</arg>
+<arg>${TimeOut}</arg>
+<arg>${Start}</arg>
+<arg>input text</arg>
+<arg>${locator}</arg>
+<arg>${value}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>${TimeOut}</arg>
+<arg>${Start}</arg>
+<arg>input text</arg>
+<arg>${locator}</arg>
+<arg>${value}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220728 03:20:59.421" level="INFO">Typing text 'TEST_320' into text field '//input[@id='dropDownValue__id']'.</msg>
+<status status="PASS" starttime="20220728 03:20:59.420" endtime="20220728 03:20:59.520"/>
+</kw>
+<status status="PASS" starttime="20220728 03:20:59.419" endtime="20220728 03:20:59.520"/>
+</kw>
+<status status="PASS" starttime="20220728 03:20:59.417" endtime="20220728 03:20:59.520"/>
+</kw>
+<status status="PASS" starttime="20220728 03:20:58.843" endtime="20220728 03:20:59.520"/>
+</kw>
+<kw name="Click Item" library="Common">
+<arg>//div[normalize-space()='Create']</arg>
+<kw name="Verify elements is visible and displayed" library="Common">
+<arg>${locator}</arg>
+<doc>Keyword to verify locator is enabled and visibled on a page.</doc>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=60</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220728 03:20:59.521" endtime="20220728 03:20:59.545"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=60</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220728 03:20:59.545" endtime="20220728 03:20:59.561"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=60</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20220728 03:20:59.569" level="INFO">Current page contains element '//div[normalize-space()='Create']'.</msg>
+<status status="PASS" starttime="20220728 03:20:59.562" endtime="20220728 03:20:59.569"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>${TimeOut}</arg>
+<arg>${Start}</arg>
+<arg>wait until page contains element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220728 03:20:59.570" endtime="20220728 03:20:59.577"/>
+</kw>
+<status status="PASS" starttime="20220728 03:20:59.569" endtime="20220728 03:20:59.577"/>
+</kw>
+<status status="PASS" starttime="20220728 03:20:59.520" endtime="20220728 03:20:59.577"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>${TimeOut}</arg>
+<arg>${Start}</arg>
+<arg>click element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220728 03:20:59.578" level="INFO">Clicking element '//div[normalize-space()='Create']'.</msg>
+<status status="PASS" starttime="20220728 03:20:59.578" endtime="20220728 03:20:59.620"/>
+</kw>
+<status status="PASS" starttime="20220728 03:20:59.578" endtime="20220728 03:20:59.621"/>
+</kw>
+<status status="PASS" starttime="20220728 03:20:59.520" endtime="20220728 03:20:59.621"/>
+</kw>
+<if>
+<branch type="IF" condition="'${Scenario}' == 'POSITIVE'">
+<kw name="Verify elements is visible and displayed" library="Common">
+<arg>//div[contains(text(),'${MESSAGE}')]</arg>
+<doc>Keyword to verify locator is enabled and visibled on a page.</doc>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=60</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220728 03:20:59.622" endtime="20220728 03:20:59.864"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=60</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220728 03:20:59.864" endtime="20220728 03:21:00.117"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=60</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20220728 03:21:00.128" level="INFO">Current page contains element '//div[contains(text(),'Cofig Created Successfully')]'.</msg>
+<status status="PASS" starttime="20220728 03:21:00.118" endtime="20220728 03:21:00.128"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>${TimeOut}</arg>
+<arg>${Start}</arg>
+<arg>wait until page contains element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220728 03:21:00.129" endtime="20220728 03:21:00.138"/>
+</kw>
+<status status="PASS" starttime="20220728 03:21:00.129" endtime="20220728 03:21:00.138"/>
+</kw>
+<status status="PASS" starttime="20220728 03:20:59.621" endtime="20220728 03:21:00.138"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>${SCREENSHOT_LOC}/ADD_REFERENCE_KEY_${TestCaseId}_${TestDataId}_${Scenario}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220728 03:21:00.333" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="ScreenShots/ADD_REFERENCE_KEY_TC_001_TD_02_POSITIVE.png"&gt;&lt;img src="ScreenShots/ADD_REFERENCE_KEY_TC_001_TD_02_POSITIVE.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220728 03:21:00.138" endtime="20220728 03:21:00.333"/>
+</kw>
+<status status="PASS" starttime="20220728 03:20:59.621" endtime="20220728 03:21:00.333"/>
+</branch>
+<status status="PASS" starttime="20220728 03:20:59.621" endtime="20220728 03:21:00.333"/>
+</if>
+<if>
+<branch type="IF" condition="'${Scenario}' == 'NEGATIVE'">
+<kw name="Log To Console" library="BuiltIn">
+<arg>negative</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220728 03:21:00.334" endtime="20220728 03:21:00.334"/>
+</kw>
+<kw name="Verify elements is visible and displayed" library="Common">
+<arg>//div[contains(text(),'${MESSAGE}')]</arg>
+<doc>Keyword to verify locator is enabled and visibled on a page.</doc>
+<status status="NOT RUN" starttime="20220728 03:21:00.334" endtime="20220728 03:21:00.334"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>${SCREENSHOT_LOC}/ADD_REFERENCE_KEY_${TestCaseId}_${TestDataId}_${Scenario}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" starttime="20220728 03:21:00.334" endtime="20220728 03:21:00.335"/>
+</kw>
+<kw name="Click Item" library="Common">
+<arg>//div[contains(text(),' Cancel')]</arg>
+<status status="NOT RUN" starttime="20220728 03:21:00.335" endtime="20220728 03:21:00.335"/>
+</kw>
+<status status="NOT RUN" starttime="20220728 03:21:00.333" endtime="20220728 03:21:00.335"/>
+</branch>
+<status status="PASS" starttime="20220728 03:21:00.333" endtime="20220728 03:21:00.335"/>
+</if>
+<status status="PASS" starttime="20220728 03:20:57.028" endtime="20220728 03:21:00.335"/>
+</iter>
+<iter>
+<var name="${i}">2</var>
+<kw name="Click Item" library="Common">
+<arg>//div[@class=' css-ackcql']</arg>
+<kw name="Verify elements is visible and displayed" library="Common">
+<arg>${locator}</arg>
+<doc>Keyword to verify locator is enabled and visibled on a page.</doc>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=60</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220728 03:21:00.336" endtime="20220728 03:21:00.361"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=60</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220728 03:21:00.361" endtime="20220728 03:21:00.377"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=60</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20220728 03:21:00.384" level="INFO">Current page contains element '//div[@class=' css-ackcql']'.</msg>
+<status status="PASS" starttime="20220728 03:21:00.377" endtime="20220728 03:21:00.384"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>${TimeOut}</arg>
+<arg>${Start}</arg>
+<arg>wait until page contains element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220728 03:21:00.385" endtime="20220728 03:21:00.393"/>
+</kw>
+<status status="PASS" starttime="20220728 03:21:00.384" endtime="20220728 03:21:00.393"/>
+</kw>
+<status status="PASS" starttime="20220728 03:21:00.336" endtime="20220728 03:21:00.393"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>${TimeOut}</arg>
+<arg>${Start}</arg>
+<arg>click element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220728 03:21:00.394" level="INFO">Clicking element '//div[@class=' css-ackcql']'.</msg>
+<status status="PASS" starttime="20220728 03:21:00.394" endtime="20220728 03:21:00.440"/>
+</kw>
+<status status="PASS" starttime="20220728 03:21:00.393" endtime="20220728 03:21:00.440"/>
+</kw>
+<status status="PASS" starttime="20220728 03:21:00.335" endtime="20220728 03:21:00.440"/>
+</kw>
+<kw name="Click Item" library="Common">
+<arg>//button[@class='btn drop-down-button btn-sm btn-block cursor']</arg>
+<kw name="Verify elements is visible and displayed" library="Common">
+<arg>${locator}</arg>
+<doc>Keyword to verify locator is enabled and visibled on a page.</doc>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=60</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220728 03:21:00.442" endtime="20220728 03:21:00.472"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=60</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220728 03:21:00.472" endtime="20220728 03:21:00.492"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=60</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20220728 03:21:00.499" level="INFO">Current page contains element '//button[@class='btn drop-down-button btn-sm btn-block cursor']'.</msg>
+<status status="PASS" starttime="20220728 03:21:00.492" endtime="20220728 03:21:00.499"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>${TimeOut}</arg>
+<arg>${Start}</arg>
+<arg>wait until page contains element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220728 03:21:00.500" endtime="20220728 03:21:00.508"/>
+</kw>
+<status status="PASS" starttime="20220728 03:21:00.499" endtime="20220728 03:21:00.508"/>
+</kw>
+<status status="PASS" starttime="20220728 03:21:00.441" endtime="20220728 03:21:00.508"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>${TimeOut}</arg>
+<arg>${Start}</arg>
+<arg>click element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220728 03:21:00.509" level="INFO">Clicking element '//button[@class='btn drop-down-button btn-sm btn-block cursor']'.</msg>
+<msg timestamp="20220728 03:21:00.782" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-132.png"&gt;&lt;img src="selenium-screenshot-132.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220728 03:21:00.782" level="FAIL">StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=103.0.5060.134)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00226463+2188387]
+	Ordinal0 [0x001BE461+1762401]
+	Ordinal0 [0x000D3D78+802168]
+	Ordinal0 [0x000D6754+812884]
+	Ordinal0 [0x000D6612+812562]
+	Ordinal0 [0x000D68A0+813216]
+	Ordinal0 [0x00107D63+1015139]
+	Ordinal0 [0x00105F68+1007464]
+	Ordinal0 [0x00103C6B+998507]
+	Ordinal0 [0x001029D9+993753]
+	Ordinal0 [0x000F8613+951827]
+	Ordinal0 [0x0011C7DC+1099740]
+	Ordinal0 [0x000F7FF4+950260]
+	Ordinal0 [0x0011C9F4+1100276]
+	Ordinal0 [0x0012CC22+1166370]
+	Ordinal0 [0x0011C5F6+1099254]
+	Ordinal0 [0x000F6BE0+945120]
+	Ordinal0 [0x000F7AD6+948950]
+	GetHandleVerifier [0x004C71F2+2712546]
+	GetHandleVerifier [0x004B886D+2652765]
+	GetHandleVerifier [0x002B002A+520730]
+	GetHandleVerifier [0x002AEE06+516086]
+	Ordinal0 [0x001C468B+1787531]
+	Ordinal0 [0x001C8E88+1805960]
+	Ordinal0 [0x001C8F75+1806197]
+	Ordinal0 [0x001D1DF1+1842673]
+	BaseThreadInitThunk [0x7595FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77697A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77697A6E+238]
+	(No symbol) [0x00000000]
+</msg>
+<status status="FAIL" starttime="20220728 03:21:00.509" endtime="20220728 03:21:00.783"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220728 03:21:01.798" level="INFO">Clicking element '//button[@class='btn drop-down-button btn-sm btn-block cursor']'.</msg>
+<status status="PASS" starttime="20220728 03:21:01.798" endtime="20220728 03:21:01.848"/>
+</kw>
+<status status="PASS" starttime="20220728 03:21:00.508" endtime="20220728 03:21:01.848"/>
+</kw>
+<status status="PASS" starttime="20220728 03:21:00.440" endtime="20220728 03:21:01.848"/>
+</kw>
+<kw name="Fetch Row Data" library="Read_TestData_Keyword">
+<var>${data}</var>
+<arg>${SMARTFREN_TESTDATA}</arg>
+<arg>SMARTFERN_ADD_REFERNCE_KEY</arg>
+<arg>${i}</arg>
+<kw name="Fetch Row" library="ReadDataFromExcel">
+<var>${rowdata}</var>
+<arg>${filename}</arg>
+<arg>${sheetname}</arg>
+<arg>${row}</arg>
+<msg timestamp="20220728 03:21:01.880" level="INFO">${rowdata} =   DUPLICATE_ENTRY TestCaseId TestDataId  Scenario DROP_DOWN                     MESSAGE
+2     TC_001TD_03     TC_001      TD_03  POSITIVE  TEST_321  Cofig Created Successfully</msg>
+<status status="PASS" starttime="20220728 03:21:01.849" endtime="20220728 03:21:01.880"/>
+</kw>
+<msg timestamp="20220728 03:21:01.890" level="INFO">${data} =   DUPLICATE_ENTRY TestCaseId TestDataId  Scenario DROP_DOWN                     MESSAGE
+2     TC_001TD_03     TC_001      TD_03  POSITIVE  TEST_321  Cofig Created Successfully</msg>
+<status status="PASS" starttime="20220728 03:21:01.848" endtime="20220728 03:21:01.890"/>
+</kw>
+<kw name="Get Value1" library="ReadDataFromExcel">
+<var>${DROP_DOWN}</var>
+<arg>${data}</arg>
+<arg>DROP_DOWN</arg>
+<msg timestamp="20220728 03:21:01.891" level="INFO">${DROP_DOWN} = TEST_321</msg>
+<status status="PASS" starttime="20220728 03:21:01.890" endtime="20220728 03:21:01.891"/>
+</kw>
+<kw name="Get Value1" library="ReadDataFromExcel">
+<var>${Scenario}</var>
+<arg>${data}</arg>
+<arg>Scenario</arg>
+<msg timestamp="20220728 03:21:01.891" level="INFO">${Scenario} = POSITIVE</msg>
+<status status="PASS" starttime="20220728 03:21:01.891" endtime="20220728 03:21:01.891"/>
+</kw>
+<kw name="Get Value1" library="ReadDataFromExcel">
+<var>${MESSAGE}</var>
+<arg>${data}</arg>
+<arg>MESSAGE</arg>
+<msg timestamp="20220728 03:21:01.892" level="INFO">${MESSAGE} = Cofig Created Successfully</msg>
+<status status="PASS" starttime="20220728 03:21:01.891" endtime="20220728 03:21:01.892"/>
+</kw>
+<kw name="Get Value1" library="ReadDataFromExcel">
+<var>${TestCaseId}</var>
+<arg>${data}</arg>
+<arg>TestCaseId</arg>
+<msg timestamp="20220728 03:21:01.893" level="INFO">${TestCaseId} = TC_001</msg>
+<status status="PASS" starttime="20220728 03:21:01.892" endtime="20220728 03:21:01.893"/>
+</kw>
+<kw name="Get Value1" library="ReadDataFromExcel">
+<var>${TestDataId}</var>
+<arg>${data}</arg>
+<arg>TestDataId</arg>
+<msg timestamp="20220728 03:21:01.893" level="INFO">${TestDataId} = TD_03</msg>
+<status status="PASS" starttime="20220728 03:21:01.893" endtime="20220728 03:21:01.893"/>
+</kw>
+<kw name="Set Input" library="Common">
+<arg>//input[@id='dropDownValue__id']</arg>
+<arg>${DROP_DOWN}</arg>
+<kw name="Click Item" library="Common">
+<arg>${locator}</arg>
+<kw name="Verify elements is visible and displayed" library="Common">
+<arg>${locator}</arg>
+<doc>Keyword to verify locator is enabled and visibled on a page.</doc>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=60</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220728 03:21:01.895" endtime="20220728 03:21:01.926"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=60</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220728 03:21:01.926" endtime="20220728 03:21:02.405"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=60</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20220728 03:21:02.413" level="INFO">Current page contains element '//input[@id='dropDownValue__id']'.</msg>
+<status status="PASS" starttime="20220728 03:21:02.405" endtime="20220728 03:21:02.413"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>${TimeOut}</arg>
+<arg>${Start}</arg>
+<arg>wait until page contains element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220728 03:21:02.413" endtime="20220728 03:21:02.422"/>
+</kw>
+<status status="PASS" starttime="20220728 03:21:02.413" endtime="20220728 03:21:02.422"/>
+</kw>
+<status status="PASS" starttime="20220728 03:21:01.894" endtime="20220728 03:21:02.422"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>${TimeOut}</arg>
+<arg>${Start}</arg>
+<arg>click element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220728 03:21:02.424" level="INFO">Clicking element '//input[@id='dropDownValue__id']'.</msg>
+<status status="PASS" starttime="20220728 03:21:02.423" endtime="20220728 03:21:02.475"/>
+</kw>
+<status status="PASS" starttime="20220728 03:21:02.423" endtime="20220728 03:21:02.475"/>
+</kw>
+<status status="PASS" starttime="20220728 03:21:01.894" endtime="20220728 03:21:02.476"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${value}' == 'nan'</arg>
+<arg>Log To Console</arg>
+<arg>NANACONDITION</arg>
+<arg>ELSE IF</arg>
+<arg>'${value}' == 'BLANK'</arg>
+<arg>Wait Until Keyword Succeeds</arg>
+<arg>${TimeOut}</arg>
+<arg>${Start}</arg>
+<arg>input text</arg>
+<arg>${locator}</arg>
+<arg>\</arg>
+<arg>ELSE</arg>
+<arg>Wait Until Keyword Succeeds</arg>
+<arg>${TimeOut}</arg>
+<arg>${Start}</arg>
+<arg>input text</arg>
+<arg>${locator}</arg>
+<arg>${value}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>${TimeOut}</arg>
+<arg>${Start}</arg>
+<arg>input text</arg>
+<arg>${locator}</arg>
+<arg>${value}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220728 03:21:02.477" level="INFO">Typing text 'TEST_321' into text field '//input[@id='dropDownValue__id']'.</msg>
+<status status="PASS" starttime="20220728 03:21:02.476" endtime="20220728 03:21:02.546"/>
+</kw>
+<status status="PASS" starttime="20220728 03:21:02.476" endtime="20220728 03:21:02.546"/>
+</kw>
+<status status="PASS" starttime="20220728 03:21:02.476" endtime="20220728 03:21:02.546"/>
+</kw>
+<status status="PASS" starttime="20220728 03:21:01.894" endtime="20220728 03:21:02.546"/>
+</kw>
+<kw name="Click Item" library="Common">
+<arg>//div[normalize-space()='Create']</arg>
+<kw name="Verify elements is visible and displayed" library="Common">
+<arg>${locator}</arg>
+<doc>Keyword to verify locator is enabled and visibled on a page.</doc>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=60</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220728 03:21:02.547" endtime="20220728 03:21:02.574"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=60</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220728 03:21:02.574" endtime="20220728 03:21:02.598"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=60</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20220728 03:21:02.611" level="INFO">Current page contains element '//div[normalize-space()='Create']'.</msg>
+<status status="PASS" starttime="20220728 03:21:02.598" endtime="20220728 03:21:02.611"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>${TimeOut}</arg>
+<arg>${Start}</arg>
+<arg>wait until page contains element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220728 03:21:02.611" endtime="20220728 03:21:02.620"/>
+</kw>
+<status status="PASS" starttime="20220728 03:21:02.611" endtime="20220728 03:21:02.620"/>
+</kw>
+<status status="PASS" starttime="20220728 03:21:02.547" endtime="20220728 03:21:02.620"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>${TimeOut}</arg>
+<arg>${Start}</arg>
+<arg>click element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220728 03:21:02.622" level="INFO">Clicking element '//div[normalize-space()='Create']'.</msg>
+<status status="PASS" starttime="20220728 03:21:02.621" endtime="20220728 03:21:02.669"/>
+</kw>
+<status status="PASS" starttime="20220728 03:21:02.621" endtime="20220728 03:21:02.669"/>
+</kw>
+<status status="PASS" starttime="20220728 03:21:02.546" endtime="20220728 03:21:02.669"/>
+</kw>
+<if>
+<branch type="IF" condition="'${Scenario}' == 'POSITIVE'">
+<kw name="Verify elements is visible and displayed" library="Common">
+<arg>//div[contains(text(),'${MESSAGE}')]</arg>
+<doc>Keyword to verify locator is enabled and visibled on a page.</doc>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=60</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220728 03:21:02.670" endtime="20220728 03:21:02.696"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=60</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220728 03:21:02.696" endtime="20220728 03:21:02.715"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=60</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20220728 03:21:02.723" level="INFO">Current page contains element '//div[contains(text(),'Cofig Created Successfully')]'.</msg>
+<status status="PASS" starttime="20220728 03:21:02.715" endtime="20220728 03:21:02.723"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>${TimeOut}</arg>
+<arg>${Start}</arg>
+<arg>wait until page contains element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220728 03:21:02.724" endtime="20220728 03:21:02.731"/>
+</kw>
+<status status="PASS" starttime="20220728 03:21:02.724" endtime="20220728 03:21:02.731"/>
+</kw>
+<status status="PASS" starttime="20220728 03:21:02.670" endtime="20220728 03:21:02.731"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>${SCREENSHOT_LOC}/ADD_REFERENCE_KEY_${TestCaseId}_${TestDataId}_${Scenario}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220728 03:21:02.863" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="ScreenShots/ADD_REFERENCE_KEY_TC_001_TD_03_POSITIVE.png"&gt;&lt;img src="ScreenShots/ADD_REFERENCE_KEY_TC_001_TD_03_POSITIVE.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220728 03:21:02.731" endtime="20220728 03:21:02.863"/>
+</kw>
+<status status="PASS" starttime="20220728 03:21:02.669" endtime="20220728 03:21:02.863"/>
+</branch>
+<status status="PASS" starttime="20220728 03:21:02.669" endtime="20220728 03:21:02.863"/>
+</if>
+<if>
+<branch type="IF" condition="'${Scenario}' == 'NEGATIVE'">
+<kw name="Log To Console" library="BuiltIn">
+<arg>negative</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220728 03:21:02.864" endtime="20220728 03:21:02.864"/>
+</kw>
+<kw name="Verify elements is visible and displayed" library="Common">
+<arg>//div[contains(text(),'${MESSAGE}')]</arg>
+<doc>Keyword to verify locator is enabled and visibled on a page.</doc>
+<status status="NOT RUN" starttime="20220728 03:21:02.864" endtime="20220728 03:21:02.864"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>${SCREENSHOT_LOC}/ADD_REFERENCE_KEY_${TestCaseId}_${TestDataId}_${Scenario}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" starttime="20220728 03:21:02.864" endtime="20220728 03:21:02.864"/>
+</kw>
+<kw name="Click Item" library="Common">
+<arg>//div[contains(text(),' Cancel')]</arg>
+<status status="NOT RUN" starttime="20220728 03:21:02.864" endtime="20220728 03:21:02.864"/>
+</kw>
+<status status="NOT RUN" starttime="20220728 03:21:02.863" endtime="20220728 03:21:02.864"/>
+</branch>
+<status status="PASS" starttime="20220728 03:21:02.863" endtime="20220728 03:21:02.864"/>
+</if>
+<status status="PASS" starttime="20220728 03:21:00.335" endtime="20220728 03:21:02.864"/>
+</iter>
+<iter>
+<var name="${i}">3</var>
+<kw name="Click Item" library="Common">
+<arg>//div[@class=' css-ackcql']</arg>
+<kw name="Verify elements is visible and displayed" library="Common">
+<arg>${locator}</arg>
+<doc>Keyword to verify locator is enabled and visibled on a page.</doc>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=60</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220728 03:21:02.865" endtime="20220728 03:21:02.888"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=60</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220728 03:21:02.888" endtime="20220728 03:21:02.905"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=60</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20220728 03:21:02.912" level="INFO">Current page contains element '//div[@class=' css-ackcql']'.</msg>
+<status status="PASS" starttime="20220728 03:21:02.905" endtime="20220728 03:21:02.912"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>${TimeOut}</arg>
+<arg>${Start}</arg>
+<arg>wait until page contains element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220728 03:21:02.913" endtime="20220728 03:21:02.920"/>
+</kw>
+<status status="PASS" starttime="20220728 03:21:02.912" endtime="20220728 03:21:02.920"/>
+</kw>
+<status status="PASS" starttime="20220728 03:21:02.865" endtime="20220728 03:21:02.920"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>${TimeOut}</arg>
+<arg>${Start}</arg>
+<arg>click element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220728 03:21:02.921" level="INFO">Clicking element '//div[@class=' css-ackcql']'.</msg>
+<status status="PASS" starttime="20220728 03:21:02.921" endtime="20220728 03:21:03.352"/>
+</kw>
+<status status="PASS" starttime="20220728 03:21:02.921" endtime="20220728 03:21:03.352"/>
+</kw>
+<status status="PASS" starttime="20220728 03:21:02.864" endtime="20220728 03:21:03.352"/>
+</kw>
+<kw name="Click Item" library="Common">
+<arg>//button[@class='btn drop-down-button btn-sm btn-block cursor']</arg>
+<kw name="Verify elements is visible and displayed" library="Common">
+<arg>${locator}</arg>
+<doc>Keyword to verify locator is enabled and visibled on a page.</doc>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=60</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220728 03:21:03.354" endtime="20220728 03:21:03.390"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=60</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220728 03:21:03.390" endtime="20220728 03:21:03.409"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=60</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20220728 03:21:03.417" level="INFO">Current page contains element '//button[@class='btn drop-down-button btn-sm btn-block cursor']'.</msg>
+<status status="PASS" starttime="20220728 03:21:03.409" endtime="20220728 03:21:03.417"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>${TimeOut}</arg>
+<arg>${Start}</arg>
+<arg>wait until page contains element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220728 03:21:03.418" endtime="20220728 03:21:03.425"/>
+</kw>
+<status status="PASS" starttime="20220728 03:21:03.417" endtime="20220728 03:21:03.425"/>
+</kw>
+<status status="PASS" starttime="20220728 03:21:03.353" endtime="20220728 03:21:03.426"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>${TimeOut}</arg>
+<arg>${Start}</arg>
+<arg>click element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220728 03:21:03.427" level="INFO">Clicking element '//button[@class='btn drop-down-button btn-sm btn-block cursor']'.</msg>
+<msg timestamp="20220728 03:21:03.771" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-133.png"&gt;&lt;img src="selenium-screenshot-133.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220728 03:21:03.773" level="FAIL">StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=103.0.5060.134)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00226463+2188387]
+	Ordinal0 [0x001BE461+1762401]
+	Ordinal0 [0x000D3D78+802168]
+	Ordinal0 [0x000D6754+812884]
+	Ordinal0 [0x000D6612+812562]
+	Ordinal0 [0x000D68A0+813216]
+	Ordinal0 [0x00107D63+1015139]
+	Ordinal0 [0x00105F68+1007464]
+	Ordinal0 [0x00103C6B+998507]
+	Ordinal0 [0x001029D9+993753]
+	Ordinal0 [0x000F8613+951827]
+	Ordinal0 [0x0011C7DC+1099740]
+	Ordinal0 [0x000F7FF4+950260]
+	Ordinal0 [0x0011C9F4+1100276]
+	Ordinal0 [0x0012CC22+1166370]
+	Ordinal0 [0x0011C5F6+1099254]
+	Ordinal0 [0x000F6BE0+945120]
+	Ordinal0 [0x000F7AD6+948950]
+	GetHandleVerifier [0x004C71F2+2712546]
+	GetHandleVerifier [0x004B886D+2652765]
+	GetHandleVerifier [0x002B002A+520730]
+	GetHandleVerifier [0x002AEE06+516086]
+	Ordinal0 [0x001C468B+1787531]
+	Ordinal0 [0x001C8E88+1805960]
+	Ordinal0 [0x001C8F75+1806197]
+	Ordinal0 [0x001D1DF1+1842673]
+	BaseThreadInitThunk [0x7595FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77697A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77697A6E+238]
+	(No symbol) [0x00000000]
+</msg>
+<status status="FAIL" starttime="20220728 03:21:03.426" endtime="20220728 03:21:03.774"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220728 03:21:04.777" level="INFO">Clicking element '//button[@class='btn drop-down-button btn-sm btn-block cursor']'.</msg>
+<status status="PASS" starttime="20220728 03:21:04.776" endtime="20220728 03:21:04.836"/>
+</kw>
+<status status="PASS" starttime="20220728 03:21:03.426" endtime="20220728 03:21:04.837"/>
+</kw>
+<status status="PASS" starttime="20220728 03:21:03.353" endtime="20220728 03:21:04.837"/>
+</kw>
+<kw name="Fetch Row Data" library="Read_TestData_Keyword">
+<var>${data}</var>
+<arg>${SMARTFREN_TESTDATA}</arg>
+<arg>SMARTFERN_ADD_REFERNCE_KEY</arg>
+<arg>${i}</arg>
+<kw name="Fetch Row" library="ReadDataFromExcel">
+<var>${rowdata}</var>
+<arg>${filename}</arg>
+<arg>${sheetname}</arg>
+<arg>${row}</arg>
+<msg timestamp="20220728 03:21:04.878" level="INFO">${rowdata} =   DUPLICATE_ENTRY TestCaseId TestDataId  Scenario DROP_DOWN                     MESSAGE
+3     TC_001TD_04     TC_001      TD_04  POSITIVE  TEST_322  Cofig Created Successfully</msg>
+<status status="PASS" starttime="20220728 03:21:04.838" endtime="20220728 03:21:04.878"/>
+</kw>
+<msg timestamp="20220728 03:21:04.884" level="INFO">${data} =   DUPLICATE_ENTRY TestCaseId TestDataId  Scenario DROP_DOWN                     MESSAGE
+3     TC_001TD_04     TC_001      TD_04  POSITIVE  TEST_322  Cofig Created Successfully</msg>
+<status status="PASS" starttime="20220728 03:21:04.837" endtime="20220728 03:21:04.884"/>
+</kw>
+<kw name="Get Value1" library="ReadDataFromExcel">
+<var>${DROP_DOWN}</var>
+<arg>${data}</arg>
+<arg>DROP_DOWN</arg>
+<msg timestamp="20220728 03:21:04.887" level="INFO">${DROP_DOWN} = TEST_322</msg>
+<status status="PASS" starttime="20220728 03:21:04.885" endtime="20220728 03:21:04.887"/>
+</kw>
+<kw name="Get Value1" library="ReadDataFromExcel">
+<var>${Scenario}</var>
+<arg>${data}</arg>
+<arg>Scenario</arg>
+<msg timestamp="20220728 03:21:04.888" level="INFO">${Scenario} = POSITIVE</msg>
+<status status="PASS" starttime="20220728 03:21:04.887" endtime="20220728 03:21:04.888"/>
+</kw>
+<kw name="Get Value1" library="ReadDataFromExcel">
+<var>${MESSAGE}</var>
+<arg>${data}</arg>
+<arg>MESSAGE</arg>
+<msg timestamp="20220728 03:21:04.888" level="INFO">${MESSAGE} = Cofig Created Successfully</msg>
+<status status="PASS" starttime="20220728 03:21:04.888" endtime="20220728 03:21:04.888"/>
+</kw>
+<kw name="Get Value1" library="ReadDataFromExcel">
+<var>${TestCaseId}</var>
+<arg>${data}</arg>
+<arg>TestCaseId</arg>
+<msg timestamp="20220728 03:21:04.889" level="INFO">${TestCaseId} = TC_001</msg>
+<status status="PASS" starttime="20220728 03:21:04.888" endtime="20220728 03:21:04.889"/>
+</kw>
+<kw name="Get Value1" library="ReadDataFromExcel">
+<var>${TestDataId}</var>
+<arg>${data}</arg>
+<arg>TestDataId</arg>
+<msg timestamp="20220728 03:21:04.889" level="INFO">${TestDataId} = TD_04</msg>
+<status status="PASS" starttime="20220728 03:21:04.889" endtime="20220728 03:21:04.889"/>
+</kw>
+<kw name="Set Input" library="Common">
+<arg>//input[@id='dropDownValue__id']</arg>
+<arg>${DROP_DOWN}</arg>
+<kw name="Click Item" library="Common">
+<arg>${locator}</arg>
+<kw name="Verify elements is visible and displayed" library="Common">
+<arg>${locator}</arg>
+<doc>Keyword to verify locator is enabled and visibled on a page.</doc>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=60</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220728 03:21:04.892" endtime="20220728 03:21:04.921"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=60</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220728 03:21:04.921" endtime="20220728 03:21:05.175"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=60</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20220728 03:21:05.191" level="INFO">Current page contains element '//input[@id='dropDownValue__id']'.</msg>
+<status status="PASS" starttime="20220728 03:21:05.176" endtime="20220728 03:21:05.191"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>${TimeOut}</arg>
+<arg>${Start}</arg>
+<arg>wait until page contains element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220728 03:21:05.192" endtime="20220728 03:21:05.199"/>
+</kw>
+<status status="PASS" starttime="20220728 03:21:05.191" endtime="20220728 03:21:05.199"/>
+</kw>
+<status status="PASS" starttime="20220728 03:21:04.890" endtime="20220728 03:21:05.199"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>${TimeOut}</arg>
+<arg>${Start}</arg>
+<arg>click element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220728 03:21:05.200" level="INFO">Clicking element '//input[@id='dropDownValue__id']'.</msg>
+<status status="PASS" starttime="20220728 03:21:05.199" endtime="20220728 03:21:05.249"/>
+</kw>
+<status status="PASS" starttime="20220728 03:21:05.199" endtime="20220728 03:21:05.249"/>
+</kw>
+<status status="PASS" starttime="20220728 03:21:04.890" endtime="20220728 03:21:05.249"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${value}' == 'nan'</arg>
+<arg>Log To Console</arg>
+<arg>NANACONDITION</arg>
+<arg>ELSE IF</arg>
+<arg>'${value}' == 'BLANK'</arg>
+<arg>Wait Until Keyword Succeeds</arg>
+<arg>${TimeOut}</arg>
+<arg>${Start}</arg>
+<arg>input text</arg>
+<arg>${locator}</arg>
+<arg>\</arg>
+<arg>ELSE</arg>
+<arg>Wait Until Keyword Succeeds</arg>
+<arg>${TimeOut}</arg>
+<arg>${Start}</arg>
+<arg>input text</arg>
+<arg>${locator}</arg>
+<arg>${value}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>${TimeOut}</arg>
+<arg>${Start}</arg>
+<arg>input text</arg>
+<arg>${locator}</arg>
+<arg>${value}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220728 03:21:05.252" level="INFO">Typing text 'TEST_322' into text field '//input[@id='dropDownValue__id']'.</msg>
+<status status="PASS" starttime="20220728 03:21:05.251" endtime="20220728 03:21:05.334"/>
+</kw>
+<status status="PASS" starttime="20220728 03:21:05.250" endtime="20220728 03:21:05.334"/>
+</kw>
+<status status="PASS" starttime="20220728 03:21:05.250" endtime="20220728 03:21:05.334"/>
+</kw>
+<status status="PASS" starttime="20220728 03:21:04.889" endtime="20220728 03:21:05.334"/>
+</kw>
+<kw name="Click Item" library="Common">
+<arg>//div[normalize-space()='Create']</arg>
+<kw name="Verify elements is visible and displayed" library="Common">
+<arg>${locator}</arg>
+<doc>Keyword to verify locator is enabled and visibled on a page.</doc>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=60</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220728 03:21:05.337" endtime="20220728 03:21:05.370"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=60</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220728 03:21:05.371" endtime="20220728 03:21:05.391"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=60</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20220728 03:21:05.399" level="INFO">Current page contains element '//div[normalize-space()='Create']'.</msg>
+<status status="PASS" starttime="20220728 03:21:05.391" endtime="20220728 03:21:05.399"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>${TimeOut}</arg>
+<arg>${Start}</arg>
+<arg>wait until page contains element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220728 03:21:05.399" endtime="20220728 03:21:05.410"/>
+</kw>
+<status status="PASS" starttime="20220728 03:21:05.399" endtime="20220728 03:21:05.410"/>
+</kw>
+<status status="PASS" starttime="20220728 03:21:05.336" endtime="20220728 03:21:05.410"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>${TimeOut}</arg>
+<arg>${Start}</arg>
+<arg>click element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220728 03:21:05.411" level="INFO">Clicking element '//div[normalize-space()='Create']'.</msg>
+<status status="PASS" starttime="20220728 03:21:05.411" endtime="20220728 03:21:05.474"/>
+</kw>
+<status status="PASS" starttime="20220728 03:21:05.410" endtime="20220728 03:21:05.474"/>
+</kw>
+<status status="PASS" starttime="20220728 03:21:05.335" endtime="20220728 03:21:05.475"/>
+</kw>
+<if>
+<branch type="IF" condition="'${Scenario}' == 'POSITIVE'">
+<kw name="Verify elements is visible and displayed" library="Common">
+<arg>//div[contains(text(),'${MESSAGE}')]</arg>
+<doc>Keyword to verify locator is enabled and visibled on a page.</doc>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=60</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220728 03:21:05.475" endtime="20220728 03:21:05.506"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=60</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220728 03:21:05.506" endtime="20220728 03:21:05.529"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=60</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20220728 03:21:05.540" level="INFO">Current page contains element '//div[contains(text(),'Cofig Created Successfully')]'.</msg>
+<status status="PASS" starttime="20220728 03:21:05.529" endtime="20220728 03:21:05.541"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>${TimeOut}</arg>
+<arg>${Start}</arg>
+<arg>wait until page contains element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220728 03:21:05.542" endtime="20220728 03:21:05.549"/>
+</kw>
+<status status="PASS" starttime="20220728 03:21:05.541" endtime="20220728 03:21:05.549"/>
+</kw>
+<status status="PASS" starttime="20220728 03:21:05.475" endtime="20220728 03:21:05.549"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>${SCREENSHOT_LOC}/ADD_REFERENCE_KEY_${TestCaseId}_${TestDataId}_${Scenario}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220728 03:21:05.692" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="ScreenShots/ADD_REFERENCE_KEY_TC_001_TD_04_POSITIVE.png"&gt;&lt;img src="ScreenShots/ADD_REFERENCE_KEY_TC_001_TD_04_POSITIVE.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220728 03:21:05.549" endtime="20220728 03:21:05.692"/>
+</kw>
+<status status="PASS" starttime="20220728 03:21:05.475" endtime="20220728 03:21:05.692"/>
+</branch>
+<status status="PASS" starttime="20220728 03:21:05.475" endtime="20220728 03:21:05.692"/>
+</if>
+<if>
+<branch type="IF" condition="'${Scenario}' == 'NEGATIVE'">
+<kw name="Log To Console" library="BuiltIn">
+<arg>negative</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220728 03:21:05.693" endtime="20220728 03:21:05.693"/>
+</kw>
+<kw name="Verify elements is visible and displayed" library="Common">
+<arg>//div[contains(text(),'${MESSAGE}')]</arg>
+<doc>Keyword to verify locator is enabled and visibled on a page.</doc>
+<status status="NOT RUN" starttime="20220728 03:21:05.693" endtime="20220728 03:21:05.693"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>${SCREENSHOT_LOC}/ADD_REFERENCE_KEY_${TestCaseId}_${TestDataId}_${Scenario}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" starttime="20220728 03:21:05.693" endtime="20220728 03:21:05.693"/>
+</kw>
+<kw name="Click Item" library="Common">
+<arg>//div[contains(text(),' Cancel')]</arg>
+<status status="NOT RUN" starttime="20220728 03:21:05.693" endtime="20220728 03:21:05.693"/>
+</kw>
+<status status="NOT RUN" starttime="20220728 03:21:05.692" endtime="20220728 03:21:05.693"/>
+</branch>
+<status status="PASS" starttime="20220728 03:21:05.692" endtime="20220728 03:21:05.693"/>
+</if>
+<status status="PASS" starttime="20220728 03:21:02.864" endtime="20220728 03:21:05.693"/>
+</iter>
+<status status="PASS" starttime="20220728 03:20:45.072" endtime="20220728 03:21:05.693"/>
+</for>
+<status status="PASS" starttime="20220728 03:20:44.208" endtime="20220728 03:21:05.693"/>
 </kw>
 <kw name="Execute Suite Teardown" library="Common" type="TEARDOWN">
 <doc>Closes all open browsers and resets the browser cache.</doc>
@@ -887,48 +2395,48 @@ Backtrace:
 <kw name="Variable Should Exist" library="BuiltIn">
 <arg>${download directory}</arg>
 <doc>Fails unless the given variable exists within the current scope.</doc>
-<msg timestamp="20220728 02:24:58.031" level="FAIL">Variable '${download directory}' does not exist.</msg>
-<status status="FAIL" starttime="20220728 02:24:58.025" endtime="20220728 02:24:58.037"/>
+<msg timestamp="20220728 03:21:05.696" level="FAIL">Variable '${download directory}' does not exist.</msg>
+<status status="FAIL" starttime="20220728 03:21:05.694" endtime="20220728 03:21:06.245"/>
 </kw>
-<msg timestamp="20220728 02:24:58.037" level="INFO">${present} = False</msg>
-<status status="PASS" starttime="20220728 02:24:58.024" endtime="20220728 02:24:58.037"/>
+<msg timestamp="20220728 03:21:06.245" level="INFO">${present} = False</msg>
+<status status="PASS" starttime="20220728 03:21:05.694" endtime="20220728 03:21:06.245"/>
 </kw>
 <if>
 <branch type="IF" condition="${present}">
 <kw name="Empty Directory" library="OperatingSystem">
 <arg>${download directory}</arg>
 <doc>Deletes all the content from the given directory.</doc>
-<status status="NOT RUN" starttime="20220728 02:24:58.038" endtime="20220728 02:24:58.038"/>
+<status status="NOT RUN" starttime="20220728 03:21:06.246" endtime="20220728 03:21:06.247"/>
 </kw>
 <kw name="Remove Directory" library="OperatingSystem">
 <arg>${download directory}</arg>
 <doc>Removes the directory pointed to by the given ``path``.</doc>
-<status status="NOT RUN" starttime="20220728 02:24:58.038" endtime="20220728 02:24:58.038"/>
+<status status="NOT RUN" starttime="20220728 03:21:06.247" endtime="20220728 03:21:06.248"/>
 </kw>
-<status status="NOT RUN" starttime="20220728 02:24:58.038" endtime="20220728 02:24:58.038"/>
+<status status="NOT RUN" starttime="20220728 03:21:06.246" endtime="20220728 03:21:06.248"/>
 </branch>
-<status status="PASS" starttime="20220728 02:24:58.037" endtime="20220728 02:24:58.038"/>
+<status status="PASS" starttime="20220728 03:21:06.245" endtime="20220728 03:21:06.248"/>
 </if>
 <kw name="Close All Browsers" library="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20220728 02:24:58.039" endtime="20220728 02:25:00.287"/>
+<status status="PASS" starttime="20220728 03:21:06.248" endtime="20220728 03:21:09.227"/>
 </kw>
 <kw name="Print" library="Common">
 <arg>finished =&gt; Execute Suite Teardown</arg>
 <kw name="Log To Console" library="BuiltIn">
 <arg>\n${message}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220728 02:25:00.289" endtime="20220728 02:25:00.291"/>
+<status status="PASS" starttime="20220728 03:21:09.228" endtime="20220728 03:21:09.230"/>
 </kw>
-<status status="PASS" starttime="20220728 02:25:00.288" endtime="20220728 02:25:00.292"/>
+<status status="PASS" starttime="20220728 03:21:09.227" endtime="20220728 03:21:09.230"/>
 </kw>
-<status status="PASS" starttime="20220728 02:24:58.023" endtime="20220728 02:25:00.292"/>
+<status status="PASS" starttime="20220728 03:21:05.694" endtime="20220728 03:21:09.230"/>
 </kw>
 <doc>Validate Isi pulsa and beli paket</doc>
-<status status="PASS" starttime="20220728 02:24:27.240" endtime="20220728 02:25:00.293"/>
+<status status="PASS" starttime="20220728 03:20:24.860" endtime="20220728 03:21:09.231"/>
 </test>
 <doc>Sample TestCase For Automation FrameWork</doc>
-<status status="PASS" starttime="20220728 02:24:26.175" endtime="20220728 02:25:00.299"/>
+<status status="PASS" starttime="20220728 03:20:23.096" endtime="20220728 03:21:09.234"/>
 </suite>
 <statistics>
 <total>

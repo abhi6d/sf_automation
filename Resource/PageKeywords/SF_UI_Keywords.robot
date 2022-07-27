@@ -414,4 +414,52 @@ Outlet Creation 1
 #    Click Item     ${BeliPacketDetailsPage}[BeliPaket]
 
 
+Add Reference Key 1
+    [Arguments]     ${row}
+    Click Item     ${ADD_REFERENCE_KEY}[Apps]
+
+    #${data}=  Fetch Row Data  ${SMARTFREN_TESTDATA}  SMARTFERN_ADD_REFERNCE_KEY  ${i}
+
+    ${present}=  Run Keyword And Return Status    Element Should Be Visible   ${ADD_REFERENCE_KEY}[DMS]
+    Run Keyword If    ${present}    Click Item  ${ADD_REFERENCE_KEY}[DMS]
+
+    Click Item  //span[text()='Settings']
+    Click Item  //a[normalize-space()='Configure Reference Key']
+
+    FOR  ${i}  IN RANGE  0  ${row}-1
+
+            Click Item  //div[@class=' css-ackcql']
+            Click Item  //button[@class='btn drop-down-button btn-sm btn-block cursor']
+
+            ${data}=  Fetch Row Data  ${SMARTFREN_TESTDATA}  SMARTFERN_ADD_REFERNCE_KEY  ${i}
+            ${DROP_DOWN}=  get_Value1  ${data}  DROP_DOWN
+            ${Scenario}=  get_Value1  ${data}  Scenario
+            ${MESSAGE}=  get_Value1  ${data}  MESSAGE
+            ${TestCaseId}=  get_Value1  ${data}  TestCaseId
+            ${TestDataId}=  get_Value1  ${data}  TestDataId
+
+            Set Input      //input[@id='dropDownValue__id']  ${DROP_DOWN}
+            Click Item  //div[normalize-space()='Create']
+
+            IF    '${Scenario}' == 'POSITIVE'
+                Verify elements is visible and displayed    //div[contains(text(),'${MESSAGE}')]
+                capture page screenshot  ${SCREENSHOT_LOC}/ADD_REFERENCE_KEY_${TestCaseId}_${TestDataId}_${Scenario}.png
+            END
+
+            IF    '${Scenario}' == 'NEGATIVE'
+
+                Log To Console  negative
+                Verify elements is visible and displayed    //div[contains(text(),'${MESSAGE}')]
+                capture page screenshot  ${SCREENSHOT_LOC}/ADD_REFERENCE_KEY_${TestCaseId}_${TestDataId}_${Scenario}.png
+                Click Item  //div[contains(text(),' Cancel')]
+
+            END
+
+
+
+    END
+
+
+
+
 
