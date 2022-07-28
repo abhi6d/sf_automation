@@ -22,7 +22,7 @@ Test Teardown     Execute Suite Teardown
 
 *** Variables ***
 
-${CRM_TestData}     ${TestData}[CRM_TestData]
+
 ${SMARTFREN_TESTDATA}     ${TestData}[SMARTFREN_TESTDATA]
 ${SmartFern_CREDENTIAL}     ${TestData}[USER][SmartFern_user_1]
 #${CRM_UI}  ${wkd}[SSOPage][crm]

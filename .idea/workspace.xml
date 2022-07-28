@@ -2,58 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14c1905f-2635-4359-bd6c-1dc548002f5d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/TestCases/A_APPROVAL.robot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestCases/A_BELI_PAKET_1.robot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestCases/A_ISI_PULSA_NEW.robot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestCases/A_OUTLET_CREATION_1.robot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestCases/A_SALES_TERRITORY.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resource/PageKeywords/Common.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Resource/PageKeywords/Common.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resource/PageKeywords/Read_TestData_Keyword.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Resource/PageKeywords/Read_TestData_Keyword.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resource/PageKeywords/SF_Login_Keyword.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Resource/PageKeywords/SF_Login_Keyword.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resource/PageKeywords/SF_UI_Keywords.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Resource/PageKeywords/SF_UI_Keywords.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resource/PageObjects/PageObjects.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Resource/PageObjects/PageObjects.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resource/PageObjects/TestData.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Resource/PageObjects/TestData.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resource/TestData/ReadDataFromExcel.py" beforeDir="false" afterPath="$PROJECT_DIR$/Resource/TestData/ReadDataFromExcel.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Resource/TestData/SMARTFREN_DATAPOOL.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Resource/TestData/SMARTFREN_DATAPOOL.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCases/A_ADD_REFERENCE_KEY.robot" beforeDir="false" afterPath="$PROJECT_DIR$/TestCases/A_ADD_REFERENCE_KEY.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCases/A_ADD_REFERENCE_KEY_1.robot" beforeDir="false" afterPath="$PROJECT_DIR$/TestCases/A_ADD_REFERENCE_KEY_1.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCases/A_BELI_PAKET.robot" beforeDir="false" afterPath="$PROJECT_DIR$/TestCases/A_BELI_PAKET.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCases/A_ISI_PULSA.robot" beforeDir="false" afterPath="$PROJECT_DIR$/TestCases/A_ISI_PULSA.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCases/A_OUTLET_CREATION.robot" beforeDir="false" afterPath="$PROJECT_DIR$/TestCases/A_OUTLET_CREATION.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCases/A_SF_001.robot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCases/A_SYSTEM_CONFIGURATION.robot" beforeDir="false" afterPath="$PROJECT_DIR$/TestCases/A_SYSTEM_CONFIGURATION.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCases/Page.png" beforeDir="false" afterPath="$PROJECT_DIR$/TestCases/Page.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCases/ScreenShots/Img_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCases/ScreenShots/Img_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCases/ScreenShots/Img_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCases/ScreenShots/Img_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestCases/A_BELI_PAKET_1.robot" beforeDir="false" afterPath="$PROJECT_DIR$/TestCases/A_BELI_PAKET_1.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestCases/ScreenShots/ADD_REFERENCE_KEY_TC_001_TD_01_NEGATIVE.png" beforeDir="false" afterPath="$PROJECT_DIR$/TestCases/ScreenShots/ADD_REFERENCE_KEY_TC_001_TD_01_NEGATIVE.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestCases/ScreenShots/ADD_REFERENCE_KEY_TC_001_TD_02_POSITIVE.png" beforeDir="false" afterPath="$PROJECT_DIR$/TestCases/ScreenShots/ADD_REFERENCE_KEY_TC_001_TD_02_POSITIVE.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestCases/ScreenShots/ADD_REFERENCE_KEY_TC_001_TD_03_POSITIVE.png" beforeDir="false" afterPath="$PROJECT_DIR$/TestCases/ScreenShots/ADD_REFERENCE_KEY_TC_001_TD_03_POSITIVE.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestCases/ScreenShots/ADD_REFERENCE_KEY_TC_001_TD_04_POSITIVE.png" beforeDir="false" afterPath="$PROJECT_DIR$/TestCases/ScreenShots/ADD_REFERENCE_KEY_TC_001_TD_04_POSITIVE.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestCases/ScreenShots/TC_001_TD_01_POSITIVE.png" beforeDir="false" afterPath="$PROJECT_DIR$/TestCases/ScreenShots/TC_001_TD_01_POSITIVE.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestCases/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/TestCases/log.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestCases/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestCases/output.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestCases/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/TestCases/report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCases/selenium-screenshot-134.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCases/selenium-screenshot-135.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCases/selenium-screenshot-136.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCases/selenium-screenshot-137.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCases/selenium-screenshot-138.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCases/selenium-screenshot-139.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCases/selenium-screenshot-140.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCases/selenium-screenshot-141.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCases/selenium-screenshot-142.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCases/selenium-screenshot-143.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCases/selenium-screenshot-144.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCases/selenium-screenshot-145.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCases/selenium-screenshot-146.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCases/selenium-screenshot-147.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCases/selenium-screenshot-148.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCases/selenium-screenshot-149.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCases/selenium-screenshot-150.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCases/selenium-screenshot-151.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCases/selenium-screenshot-152.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCases/selenium-screenshot-153.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCases/selenium-screenshot-154.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCases/selenium-screenshot-155.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCases/selenium-screenshot-156.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +44,29 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
