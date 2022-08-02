@@ -462,4 +462,38 @@ Add Reference Key 1
 
 
 
+System Configuration
+    [Arguments]     ${row}
 
+
+    Click Item     ${ADD_REFERENCE_KEY}[Apps]
+    ${present}=  Run Keyword And Return Status    Element Should Be Visible   ${ADD_REFERENCE_KEY}[DMS]
+    Run Keyword If    ${present}    Click Item  ${ADD_REFERENCE_KEY}[DMS]
+    Click Item  //span[text()='Settings']
+
+
+    FOR  ${i}  IN RANGE  0  ${row}-1
+
+        ${data}=  Fetch Row Data  ${SMARTFREN_TESTDATA}  SMARFERN_SYS_CONFIG  ${i}
+        ${Scenario}=  get_Value1  ${data}  Scenario
+        ${CONFIG_ID}=  get_Value1  ${data}  CONFIG_ID
+        ${CONFIG_NAME}=  get_Value1  ${data}  CONFIG_NAME
+
+        Click Item  //a[normalize-space()='System Configurations']
+        Click Item  //div[@class='css-1hwfws3 Select__value-container']
+        Click Item  //div[contains(text(),'DMS')]
+        Click Item  //div[contains(text(),' Next')]
+        Click Item  //div[contains(text(),' Create')]
+        Set Input  //input[@id='name__id']  ${CONFIG_ID}
+        Set Input  //input[@id='value__id']  ${CONFIG_NAME}
+        Click Item  (//div[contains(text(),' Create')])[2]
+
+        IF    '${Scenario}' == 'POSITIVE'
+                Click Item  (//div[contains(text(),' Create')])[2]
+        END
+
+        IF    '${Scenario}' == 'NEGATIVE'
+                Click Item  //div[contains(text(),' Cancel')]
+        END
+
+    END

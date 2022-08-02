@@ -16,6 +16,10 @@ TestData:
       username: '2000'
       password: '873467'
 
+    SmartFern_user_4:
+      username: '1009'
+      password: '873467'
+
 
   SMARTFREN_TESTDATA: C:/Users/abhishek.jayalal/Desktop/SMARTFERN_AUTOMATION/sf_auto_18_07_2022/sf_auto_07072022/Resource/TestData/SMARTFREN_DATAPOOL.xlsx
   SCREENSHOT_LOC: C:/Users/abhishek.jayalal/Desktop/SMARTFERN_AUTOMATION/sf_auto_18_07_2022/sf_auto_07072022/TestCases/ScreenShots/
